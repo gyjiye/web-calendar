@@ -4,7 +4,7 @@
 .overlay{
     position: fixed;
     /*this element will not be shown*/
-    /*display: none;*/
+    display: none;
     width: 100%;
     height: 100%;
     top: 0;
@@ -14,4 +14,33 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* 元素堆叠顺序，数值大的在上方，默认为0*/
     z-index: 1;
+}
+
+/*----------------------------------------*/
+/*----------------Wrappers-------------*/
+/*----------------------------------------*/
+
+#wrapper{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /*transition: property duration timing-function delay;*/
+    /*包含所有属性，需要时间0.5s，运动速度逐渐变慢*/
+    padding-left: 0;
+}
+
+#sidebar-wrapper{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #1a1a1a;
+    height: 100%;
+    /* QUESTION: why do this  */
+    left: 220px;
+    margin-left: -220px;
+    /*overflow 属性规定当内容溢出元素框时发生的事情。*/
+	/*auto:如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+    /*hidden:内容会被修剪，并且其余内容是不可见的。*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 0;
+    z-index: 100;
 }
