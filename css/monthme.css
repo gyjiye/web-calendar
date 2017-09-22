@@ -1,0 +1,87 @@
+/*----------------------------------------*/
+/*------------------ Global ----------------*/
+/*-------------------------------------------*/
+
+html{
+    height: 100%;
+
+}
+
+body{
+    height: 100%;
+    position: relative;
+}
+
+
+
+/*----------------------------------------*/
+/*------------------ Sidebar ----------------*/
+/*-------------------------------------------*/
+
+.sidebar{
+    height: 100%;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    left: -220px;
+    position: absolute;
+    background-color: rgba(0, 9, 9, 0.68);
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nav-list li{
+    padding: 10px;
+}
+
+.sidebar a{
+    color: rgb(240, 246, 255);
+}
+
+.contain{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.head{
+    padding: 20px 0;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(64, 71, 68);
+    font-size: 1.2em;
+    font-weight: 200;
+    background-color: rgba(217, 217, 217, 0.69);
+}
+
+.head a{
+    color: rgba(96, 110, 109, 0.69);
+}
+
+.head-item{
+    padding: 0;
+}
+
+.arrow{
+    padding, margin: 0;
+    padding-top: 8px;
+    height: 48px;
+    width: 48px;
+    font-size: 1.5em;
+}
+
+#data{
+    margin: 0 15px;
+}
+
+#avatar{
+    display: block;
+    background-color: rgb(157, 206, 101);
+    width: 50px;
+    height: 50px;
+    /*单行文字垂直居中，设置line-height=height*/
+    line-height: 50px;
+    margin: 0 auto;
+    font-size: 2.5em;
+    font-weight: 200;
+    color: rgba(219, 233, 235, 0.83);
+}

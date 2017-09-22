@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--适应移动设备-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>monthme</title>
+    <!-- css -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <!-- Bootstrap -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/monthme.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- 总容器 -->
+    <div class="container-fluid">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="nav nav-pills nav-stacked" id="nav-list">
+                <li class="h2" role="presentation">
+                    <a href="#">Calendar</a>
+                </li>
+                <li class="list-item h4"role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon">&emsp;Schedule</a>
+                </li>
+                <li class="list-item h4"role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon">&emsp;Day</a>
+                </li>
+                <li class="list-item h4"role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon">&emsp;Week</a>
+                </li>
+                <li class="list-item h4"role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon">&emsp;Month</a>
+                </li>
+                <li class="list-item h4"role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-user icon">&emsp;Friends</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="contain">
+            <!-- Header -->
+            <div class="row head">
+                <div class="col-xs-2">
+                    <button type="button" class="hamburger head-item">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                </div>
+
+                <div class="col-xs-8 text-center head-item">
+                    <span class="arrow">
+                        <a href="#"><span class="glyphicon glyphicon-menu-left"></a>
+                    </span>
+                    <span id="data">DECEMBER 2017</span>
+                    <span class="arrow">
+                        <a href="#"><span class="glyphicon glyphicon-menu-right"></a>
+                    </span>
+                </div>
+
+                <div class="col-xs-2 avatar-shell text-center head-item">
+                    <div id="avatar">H</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
