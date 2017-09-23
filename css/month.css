@@ -1,0 +1,57 @@
+
+/*----------------------------------------*/
+/*------------------ Content ----------------*/
+/*-------------------------------------------*/
+
+
+
+.table-head{
+    width: 14%;
+    color: rgba(19, 18, 19, 1);
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    font-style: italic;
+}
+
+table tr td.table-item{
+    padding: 0;
+    height: 80px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.table-item div{
+    height: 20%;
+    margin:0;
+    padding: 0;
+}
+
+div.table-item-date{
+    text-align: right;
+    padding-right: 5px;
+}
+
+/*----------------------------------------*/
+/*------------------ Responsive ----------------*/
+/*-------------------------------------------*/
+@media screen and (min-width: 780px) {
+    .sidebar{
+        left: 0;
+        float: left;
+    }
+
+    .content{
+        position: relative;
+        margin-left: 220px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    table tr td.table-item{
+        height: 120px;
+    }
+}

@@ -13,39 +13,151 @@
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <!-- Bootstrap -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/month.css">
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+    <!-- calendar font -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- 总容器 -->
+    <div class="contain">
 
-        <div id="wrapper">
-            <div class="overlay"></div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="nav nav-pills nav-stacked" id="nav-list">
+                <li class="h2" role="presentation">
+                    <a href="#">Calendar</a>
+                </li>
+                <li class="list-item h4" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Schedule</a>
+                </li>
+                <li class="list-item h4" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Day</a>
+                </li>
+                <li class="list-item h4" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Week</a>
+                </li>
+                <li class="list-item h4" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Month</a>
+                </li>
+                <li class="list-item h4" role="presentation">
+                    <a href="#"><span class="glyphicon glyphicon-user icon"></span>&emsp;Friends</a>
+                </li>
+            </ul>
+        </div>
 
-            <!-- Sidebar -->
-            <nav class="navbar navbar-fixed-up navbar-inverse" id="sidebar-wrapper">
-                <ul class="nav sidebar-nav">
-                    <li class="sidebar-brand"><a href="#">Calendar</a></li>
-                    <li><a href="#">schedule</a></li>
-                    <li><a href="#">day</a></li>
-                    <li><a href="#">week</a></li>
-                    <li><a href="#">month</a></li>
-                </ul>
-            </nav>
-            <!-- end of Sidebar -->
+        <!-- Content -->
+        <div class="container-fluid content">
+            <!-- Header -->
+            <div class="row head">
+                <div class="col-xs-2">
+                    <button type="button" class="hamburger head-item">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+                </div>
 
-            <!-- Page Content -->
-            <div id="page-content-wrapper">
-              <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
-              </button>
+                <div class="col-xs-8 text-center head-item">
+                    <span class="arrow">
+                        <a href="#"><span class="glyphicon glyphicon-menu-left"></span></a>
+                    </span>
+                    <span id="data">DECEMBER 2017</span>
+                    <span class="arrow">
+                        <a href="#"><span class="glyphicon glyphicon-menu-right"></span></a>
+                    </span>
+                </div>
+
+                <div class="col-xs-2 avatar-shell text-center head-item">
+                    <div id="avatar">H</div>
+                </div>
 
             </div>
-            <!-- page-content-wrapper -->
+
+            <hr>
+
+            <!-- Calendar -->
+            <div id="calendar">
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="table-head">Sun</td>
+                        <td class="table-head">Mon</td>
+                        <td class="table-head">Tue</td>
+                        <td class="table-head">Wed</td>
+                        <td class="table-head">Thu</td>
+                        <td class="table-head">Fri</td>
+                        <td class="table-head">Sat</td>
+                    </tr>
+                    <!-- to show the specified date -->
+                    <!-- two row for one day -->
+                    <tr>
+                        <td class="table-item" ><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                        <td class="table-item"><div class="table-item-date">1</div><div></div><div></div><div></div><div></div></td>
+                    </tr>
+
+                </table>
+            </div>
 
         </div>
+
+
+
+    </div>
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -24,6 +24,8 @@ body{
     margin: 0;
     padding: 0;
     left: -220px;
+    /*or*/
+    /*left: 0;*/
     position: absolute;
     background-color: rgba(0, 9, 9, 0.68);
     font-family: 'Quicksand', sans-serif;
@@ -37,7 +39,9 @@ body{
     color: rgb(240, 246, 255);
 }
 
+/*总容器*/
 .contain{
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
@@ -62,8 +66,8 @@ body{
 }
 
 .arrow{
-    padding, margin: 0;
-    padding-top: 8px;
+    margin: 0;
+    padding: 8px 0 0;
     height: 48px;
     width: 48px;
     font-size: 1.5em;
@@ -84,4 +88,26 @@ body{
     font-size: 2.5em;
     font-weight: 200;
     color: rgba(219, 233, 235, 0.83);
+}
+
+.hamburger{
+    display: block;
+    height: 48px;
+    width: 48px;
+    /*无边框*/
+    border: none;
+    /*背景透明*/
+    background: transparent;
+}
+
+
+.hamburger .hamb-top,
+.hamburger .hamb-middle,
+.hamburger .hamb-bottom {
+    display: block;
+    height: 7px;
+    left: 0;
+    width: 90%;
+    background-color: rgb(157, 206, 101);
+    margin: 5px 10px 5px 0;
 }
