@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9beb3b89-d369-4d81-94cc-d060dbc6ee6f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/week.css" afterPath="$PROJECT_DIR$/css/week.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/test.html" afterPath="$PROJECT_DIR$/html/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/week.html" afterPath="$PROJECT_DIR$/html/week.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,64 +16,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47203848">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="week.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/html/week.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="488">
-                  <caret line="93" column="22" lean-forward="false" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#1488#1494#0" expanded="true" />
-                    <element signature="e#1856#1862#0" expanded="true" />
-                    <element signature="e#2044#2050#0" expanded="true" />
-                    <element signature="e#6868#6874#1" expanded="true" />
-                    <element signature="e#6931#6937#1" expanded="true" />
-                    <element signature="e#6994#7000#1" expanded="true" />
-                    <element signature="e#7057#7063#1" expanded="true" />
-                    <element signature="e#7120#7126#1" expanded="true" />
-                    <element signature="e#7183#7189#1" expanded="true" />
-                    <element signature="e#7246#7252#1" expanded="true" />
-                    <element signature="e#7309#7315#1" expanded="true" />
-                    <element signature="e#7372#7378#1" expanded="true" />
-                    <element signature="e#7435#7441#1" expanded="true" />
-                    <element signature="e#7498#7504#1" expanded="true" />
-                    <element signature="e#7561#7567#1" expanded="true" />
-                    <element signature="e#7624#7630#1" expanded="true" />
-                    <element signature="e#7687#7693#1" expanded="true" />
-                    <element signature="e#7750#7756#1" expanded="true" />
-                    <element signature="e#7813#7819#1" expanded="true" />
-                    <element signature="e#7876#7882#1" expanded="true" />
-                    <element signature="e#7939#7945#1" expanded="true" />
-                    <element signature="e#8002#8008#1" expanded="true" />
-                    <element signature="e#8065#8071#1" expanded="true" />
-                    <element signature="e#8128#8134#1" expanded="true" />
-                    <element signature="e#8191#8197#1" expanded="true" />
-                    <element signature="e#8254#8260#1" expanded="true" />
-                    <element signature="e#8317#8323#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="week.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/week.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
-                  <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="week.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/week.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="120" column="42" lean-forward="true" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#1488#1494#0" expanded="true" />
+                <element signature="e#1856#1862#0" expanded="true" />
+                <element signature="e#2044#2050#0" expanded="true" />
+                <element signature="e#6909#6915#1" expanded="true" />
+                <element signature="e#6972#6978#1" expanded="true" />
+                <element signature="e#7035#7041#1" expanded="true" />
+                <element signature="e#7098#7104#1" expanded="true" />
+                <element signature="e#7161#7167#1" expanded="true" />
+                <element signature="e#7224#7230#1" expanded="true" />
+                <element signature="e#7287#7293#1" expanded="true" />
+                <element signature="e#7350#7356#1" expanded="true" />
+                <element signature="e#7413#7419#1" expanded="true" />
+                <element signature="e#7476#7482#1" expanded="true" />
+                <element signature="e#7539#7545#1" expanded="true" />
+                <element signature="e#7602#7608#1" expanded="true" />
+                <element signature="e#7665#7671#1" expanded="true" />
+                <element signature="e#7728#7734#1" expanded="true" />
+                <element signature="e#7791#7797#1" expanded="true" />
+                <element signature="e#7854#7860#1" expanded="true" />
+                <element signature="e#7917#7923#1" expanded="true" />
+                <element signature="e#7980#7986#1" expanded="true" />
+                <element signature="e#8043#8049#1" expanded="true" />
+                <element signature="e#8106#8112#1" expanded="true" />
+                <element signature="e#8169#8175#1" expanded="true" />
+                <element signature="e#8232#8238#1" expanded="true" />
+                <element signature="e#8295#8301#1" expanded="true" />
+                <element signature="e#8358#8364#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,8 +84,8 @@
         <option value="$PROJECT_DIR$/html/month.html" />
         <option value="$PROJECT_DIR$/css/month.css" />
         <option value="$PROJECT_DIR$/css/common.css" />
-        <option value="$PROJECT_DIR$/html/week.html" />
         <option value="$PROJECT_DIR$/css/week.css" />
+        <option value="$PROJECT_DIR$/html/week.html" />
       </list>
     </option>
   </component>
@@ -140,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,6 +182,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -231,12 +211,7 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.week.html">
-    <configuration name="week.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/calendar/html/week.html" />
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.week.html" />
-      </list>
-    </recent_temporary>
+    <configuration name="week.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/calendar/html/week.html" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -263,11 +238,12 @@
       <workItem from="1506405815162" duration="2361000" />
       <workItem from="1506409275924" duration="608000" />
       <workItem from="1506431686488" duration="3119000" />
+      <workItem from="1506434948582" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34408000" />
+    <option name="totallyTimeSpent" value="34657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -636,51 +612,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-79">
           <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/week.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/week.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="93" column="22" lean-forward="false" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+        <state relative-caret-position="533">
+          <caret line="120" column="42" lean-forward="true" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
           <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1488#1494#0" expanded="true" />
             <element signature="e#1856#1862#0" expanded="true" />
             <element signature="e#2044#2050#0" expanded="true" />
-            <element signature="e#6868#6874#1" expanded="true" />
-            <element signature="e#6931#6937#1" expanded="true" />
-            <element signature="e#6994#7000#1" expanded="true" />
-            <element signature="e#7057#7063#1" expanded="true" />
-            <element signature="e#7120#7126#1" expanded="true" />
-            <element signature="e#7183#7189#1" expanded="true" />
-            <element signature="e#7246#7252#1" expanded="true" />
-            <element signature="e#7309#7315#1" expanded="true" />
-            <element signature="e#7372#7378#1" expanded="true" />
-            <element signature="e#7435#7441#1" expanded="true" />
-            <element signature="e#7498#7504#1" expanded="true" />
-            <element signature="e#7561#7567#1" expanded="true" />
-            <element signature="e#7624#7630#1" expanded="true" />
-            <element signature="e#7687#7693#1" expanded="true" />
-            <element signature="e#7750#7756#1" expanded="true" />
-            <element signature="e#7813#7819#1" expanded="true" />
-            <element signature="e#7876#7882#1" expanded="true" />
-            <element signature="e#7939#7945#1" expanded="true" />
-            <element signature="e#8002#8008#1" expanded="true" />
-            <element signature="e#8065#8071#1" expanded="true" />
-            <element signature="e#8128#8134#1" expanded="true" />
-            <element signature="e#8191#8197#1" expanded="true" />
-            <element signature="e#8254#8260#1" expanded="true" />
-            <element signature="e#8317#8323#1" expanded="true" />
+            <element signature="e#6909#6915#1" expanded="true" />
+            <element signature="e#6972#6978#1" expanded="true" />
+            <element signature="e#7035#7041#1" expanded="true" />
+            <element signature="e#7098#7104#1" expanded="true" />
+            <element signature="e#7161#7167#1" expanded="true" />
+            <element signature="e#7224#7230#1" expanded="true" />
+            <element signature="e#7287#7293#1" expanded="true" />
+            <element signature="e#7350#7356#1" expanded="true" />
+            <element signature="e#7413#7419#1" expanded="true" />
+            <element signature="e#7476#7482#1" expanded="true" />
+            <element signature="e#7539#7545#1" expanded="true" />
+            <element signature="e#7602#7608#1" expanded="true" />
+            <element signature="e#7665#7671#1" expanded="true" />
+            <element signature="e#7728#7734#1" expanded="true" />
+            <element signature="e#7791#7797#1" expanded="true" />
+            <element signature="e#7854#7860#1" expanded="true" />
+            <element signature="e#7917#7923#1" expanded="true" />
+            <element signature="e#7980#7986#1" expanded="true" />
+            <element signature="e#8043#8049#1" expanded="true" />
+            <element signature="e#8106#8112#1" expanded="true" />
+            <element signature="e#8169#8175#1" expanded="true" />
+            <element signature="e#8232#8238#1" expanded="true" />
+            <element signature="e#8295#8301#1" expanded="true" />
+            <element signature="e#8358#8364#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/week.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
