@@ -9,6 +9,11 @@
 /*-----------------------------------------------------------*/
 /*--------------------------- Header ---------------------------*/
 /*-----------------------------------------------------------*/
+
+.row.head{
+    margin: 0;
+}
+
 .hamburger{
     margin-left: 15px;
 }
@@ -19,38 +24,136 @@
 /*--------------------------- Table ---------------------------*/
 /*-----------------------------------------------------------*/
 
+#date-outer{
+    width: 100%;
+    margin: 0;
+}
+
 .table-date{
     width: 100%;
-}
-
-#daytime-head{
-    width: 12%;
-}
-
-
-table.table.table-date{
-
+    height: 50px;
+    margin-bottom: 0;
+    border: 1px solid #ddd;
+    /*合并边框线*/
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 
-.table-head{
-    width: 12%;
+#date{
+    display: flex;
+}
+
+.date-item{
+    width: 20%;
+    height: 50px;
+    text-align: center;
     color: rgba(19, 18, 19, 1);
     font-weight: normal;
-    text-align: center;
     font-family: 'Questrial', sans-serif;
     font-style: italic;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: none;
+    border-left: none;
+    /*line-height: 50px;*/
 }
 
-#table-head-ender{
-    width: 4%;
+#table-head-start{
+    width: 50px;
+    /*max-width: 50px;*/
+}
+
+/*方案一样式，后改用flex方案*/
+/*.table-head{*/
+    /*width: 14%;*/
+    /*color: rgba(19, 18, 19, 1);*/
+    /*font-weight: normal;*/
+    /*text-align: center;*/
+    /*font-family: 'Questrial', sans-serif;*/
+    /*font-style: italic;*/
+    /*border: 1px solid #ddd;*/
+    /*border-collapse: collapse;*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+/*}*/
+
+/*#table-head-end{*/
+/*!*width: 4%;*!*/
+/*}*/
+
+.show-optional{
+    display: none;
+}
+
+
+
+.daytime{
+    float: left;
+    width: 50px;
+    margin-top: 25px;
 }
 
 .time{
     height: 50px;
-    width: 12%;
+    width: 50px;
     line-height: 50px;
     color: grey;
     text-align: right;
-    border: 1px solid black;
+    word-spacing: 2px;
+    padding-right: 5px;
+    /*border: 1px solid black;*/
+}
+
+.horizontal-line{
+    /*height: 1200px;*/
+    margin-left: 50px;
+    /*float: left;*/
+    position: relative;
+}
+
+.horizontal-line-item{
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px dotted #ededed;
+    margin-bottom: 24px;
+    height: 26px;
+    /*width: 100%*/
+}
+
+.vertical-line{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*background-color: #00b3ee;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;/*在webkit内核的浏览器上使用要加前缀*/
+}
+
+.vertical-line-item{
+    /*float: left;*/
+    width: 15%;
+    display: inline-block;
+    height: 1200px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-top: none;
+    border-left: none;
+}
+
+
+
+
+
+/*-----------------------------------------------------------*/
+/*--------------------------- Responsive ---------------------------*/
+/*-----------------------------------------------------------*/
+
+@media screen and (min-width:450px) {
+    .show-optional{
+        display: inline ;
+    }
 }
