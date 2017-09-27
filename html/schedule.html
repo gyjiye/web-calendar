@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--适应移动设备-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Schedule</title>
+    <!-- css -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <!-- Bootstrap -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--my style-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+    <!-- logo font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
+    <!-- calendar font -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <!--panel on schedule =========  oxygen-->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+
+<body>
+<!-- 总容器 -->
+<div class="contain">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked" id="nav-list">
+            <li class="h2" role="presentation">
+                <a href="#">Calendar</a>
+            </li>
+            <li class="list-item h4" role="presentation">
+                <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Schedule<span class="badge">12</span></a>
+            </li>
+            <li class="list-item h4" role="presentation">
+                <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Day</a>
+            </li>
+            <li class="list-item h4" role="presentation">
+                <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Week</a>
+            </li>
+            <li class="list-item h4" role="presentation">
+                <a href="#"><span class="glyphicon glyphicon-tags icon"></span>&emsp;Month</a>
+            </li>
+            <li class="list-item h4" role="presentation">
+                <a href="#"><span class="glyphicon glyphicon-user icon"></span>&emsp;Friends<span class="badge">12</span></a>
+            </li>
+            <li class="list-item h4" role="presentation">
+                <a href="#"><span class="glyphicon glyphicon-cog"></span>&emsp;Settings</a>
+            </li>
+        </ul>
+
+        <!--退出登陆-->
+        <button type="button" class="btn btn-lg btn-primary " id="logout" >
+            <span class="glyphicon glyphicon-off"></span>
+            &emsp;Logout
+        </button>
+    </div>
+
+    <!-- Content -->
+    <div class="container-fluid content">
+        <!-- Header -->
+        <div class="row head">
+            <div class="col-xs-2">
+                <button type="button" class="hamburger head-item">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+            </div>
+
+            <div class="col-xs-8 text-center head-item">
+                    <span class="arrow">
+                        <a href="#"><span class="glyphicon glyphicon-menu-left"></span></a>
+                    </span>
+                <span id="data">DECEMBER 2017</span>
+                <span class="arrow">
+                        <a href="#"><span class="glyphicon glyphicon-menu-right"></span></a>
+                    </span>
+            </div>
+
+            <div class="col-xs-2 avatar-shell text-center head-item">
+                <div id="avatar">H</div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Schedule -->
+        <!--图标glyphicon glyphicon-pencil-->
+        <div class="panel">
+            <div class="panel-item summary">
+                <div class="greet">
+                    <div id="greet-content">
+                        <div class="glyphicon glyphicon-magnet greet-logo"></div>
+                        <p>Good <span id="greet-content-changeable">morning!</span></p>
+                        <br>
+                        <p class="word-after-greeting">Today you have:</p>
+                    </div>
+
+                    <div id="tasks"><span id="num-task">12 </span>tasks</div>
+                    <br>
+                    <div id="notification"><span id="num-nofitication">12 </span>notification</div>
+
+
+                </div>
+            </div>
+            <div class="panel-item things-list">
+
+            </div>
+            <div class="panel-item description">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

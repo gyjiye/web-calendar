@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9beb3b89-d369-4d81-94cc-d060dbc6ee6f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/schedule.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/schedule.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/week.css" afterPath="$PROJECT_DIR$/css/week.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/month.html" afterPath="$PROJECT_DIR$/html/month.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/week.html" afterPath="$PROJECT_DIR$/html/week.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,58 +21,124 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="week.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/week.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="120" column="42" lean-forward="true" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#1488#1494#0" expanded="true" />
-                <element signature="e#1856#1862#0" expanded="true" />
-                <element signature="e#2044#2050#0" expanded="true" />
-                <element signature="e#6909#6915#1" expanded="true" />
-                <element signature="e#6972#6978#1" expanded="true" />
-                <element signature="e#7035#7041#1" expanded="true" />
-                <element signature="e#7098#7104#1" expanded="true" />
-                <element signature="e#7161#7167#1" expanded="true" />
-                <element signature="e#7224#7230#1" expanded="true" />
-                <element signature="e#7287#7293#1" expanded="true" />
-                <element signature="e#7350#7356#1" expanded="true" />
-                <element signature="e#7413#7419#1" expanded="true" />
-                <element signature="e#7476#7482#1" expanded="true" />
-                <element signature="e#7539#7545#1" expanded="true" />
-                <element signature="e#7602#7608#1" expanded="true" />
-                <element signature="e#7665#7671#1" expanded="true" />
-                <element signature="e#7728#7734#1" expanded="true" />
-                <element signature="e#7791#7797#1" expanded="true" />
-                <element signature="e#7854#7860#1" expanded="true" />
-                <element signature="e#7917#7923#1" expanded="true" />
-                <element signature="e#7980#7986#1" expanded="true" />
-                <element signature="e#8043#8049#1" expanded="true" />
-                <element signature="e#8106#8112#1" expanded="true" />
-                <element signature="e#8169#8175#1" expanded="true" />
-                <element signature="e#8232#8238#1" expanded="true" />
-                <element signature="e#8295#8301#1" expanded="true" />
-                <element signature="e#8358#8364#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.58087796">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="schedule.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/html/schedule.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="467">
+                  <caret line="110" column="22" lean-forward="true" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#1413#1419#0" expanded="true" />
+                    <element signature="e#2540#2546#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="month.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/html/month.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1155">
+                  <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#2370#2376#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="week.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/html/week.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+                  <folding>
+                    <element signature="e#1513#1519#0" expanded="true" />
+                    <element signature="e#1876#1882#0" expanded="true" />
+                    <element signature="e#2059#2065#0" expanded="true" />
+                    <element signature="e#2328#2334#0" expanded="true" />
+                    <element signature="e#7170#7176#1" expanded="true" />
+                    <element signature="e#7233#7239#1" expanded="true" />
+                    <element signature="e#7296#7302#1" expanded="true" />
+                    <element signature="e#7359#7365#1" expanded="true" />
+                    <element signature="e#7422#7428#1" expanded="true" />
+                    <element signature="e#7485#7491#1" expanded="true" />
+                    <element signature="e#7548#7554#1" expanded="true" />
+                    <element signature="e#7611#7617#1" expanded="true" />
+                    <element signature="e#7674#7680#1" expanded="true" />
+                    <element signature="e#7737#7743#1" expanded="true" />
+                    <element signature="e#7800#7806#1" expanded="true" />
+                    <element signature="e#7863#7869#1" expanded="true" />
+                    <element signature="e#7926#7932#1" expanded="true" />
+                    <element signature="e#7989#7995#1" expanded="true" />
+                    <element signature="e#8052#8058#1" expanded="true" />
+                    <element signature="e#8115#8121#1" expanded="true" />
+                    <element signature="e#8178#8184#1" expanded="true" />
+                    <element signature="e#8241#8247#1" expanded="true" />
+                    <element signature="e#8304#8310#1" expanded="true" />
+                    <element signature="e#8367#8373#1" expanded="true" />
+                    <element signature="e#8430#8436#1" expanded="true" />
+                    <element signature="e#8493#8499#1" expanded="true" />
+                    <element signature="e#8556#8562#1" expanded="true" />
+                    <element signature="e#8619#8625#1" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="schedule.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/schedule.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="945">
+                  <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="week.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/week.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="103">
+                  <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/common.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="394">
+                  <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.overlay</find>
+      <find>font</find>
+      <find>font-family</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,11 +152,13 @@
         <option value="$PROJECT_DIR$/month/month.html" />
         <option value="chrome-extension://elicpjhcidhpjomhibiffojpinpmmpil/video/content.js" />
         <option value="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" />
-        <option value="$PROJECT_DIR$/html/month.html" />
         <option value="$PROJECT_DIR$/css/month.css" />
-        <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/week.css" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/html/month.html" />
         <option value="$PROJECT_DIR$/html/week.html" />
+        <option value="$PROJECT_DIR$/html/schedule.html" />
+        <option value="$PROJECT_DIR$/css/schedule.css" />
       </list>
     </option>
   </component>
@@ -99,12 +172,14 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-321" />
-    <option name="y" value="234" />
+    <option name="x" value="329" />
+    <option name="y" value="165" />
     <option name="width" value="1321" />
     <option name="height" value="780" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -120,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,29 +236,12 @@
               <item name="calendar" type="462c0819:PsiDirectoryNode" />
               <item name="reference" type="462c0819:PsiDirectoryNode" />
               <item name="jquery插件" type="462c0819:PsiDirectoryNode" />
-              <item name="Bootstrap3Nav" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="reference" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery插件" type="462c0819:PsiDirectoryNode" />
               <item name="日程表样式" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="reference" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery插件" type="462c0819:PsiDirectoryNode" />
-              <item name="日程表样式" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -192,6 +251,8 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.css" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -210,8 +271,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.week.html">
+  <component name="RunManager" selected="JavaScript Debug.schedule.html">
+    <configuration name="schedule.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/calendar/html/schedule.html" />
     <configuration name="week.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/calendar/html/week.html" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.week.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.schedule.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.schedule.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -239,11 +310,13 @@
       <workItem from="1506409275924" duration="608000" />
       <workItem from="1506431686488" duration="3119000" />
       <workItem from="1506434948582" duration="249000" />
+      <workItem from="1506486977321" duration="11710000" />
+      <workItem from="1506515489196" duration="4603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34657000" />
+    <option name="totallyTimeSpent" value="50970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -257,7 +330,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22905028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3586592" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -282,7 +355,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17877094" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22905028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,20 +369,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/week.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="66" column="19" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="66" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/month.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -580,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="66" column="19" lean-forward="false" selection-start-line="62" selection-start-column="10" selection-end-line="66" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -594,68 +646,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/month.html">
+    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="-37">
+          <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/month.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="840">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/month.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <element signature="e#2370#2376#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="394">
+          <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/week.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="103">
+          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/schedule.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="110" column="22" lean-forward="true" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+          <folding>
+            <element signature="e#1413#1419#0" expanded="true" />
+            <element signature="e#2540#2546#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/week.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="120" column="42" lean-forward="true" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+        <state relative-caret-position="105">
+          <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#1488#1494#0" expanded="true" />
-            <element signature="e#1856#1862#0" expanded="true" />
-            <element signature="e#2044#2050#0" expanded="true" />
-            <element signature="e#6909#6915#1" expanded="true" />
-            <element signature="e#6972#6978#1" expanded="true" />
-            <element signature="e#7035#7041#1" expanded="true" />
-            <element signature="e#7098#7104#1" expanded="true" />
-            <element signature="e#7161#7167#1" expanded="true" />
-            <element signature="e#7224#7230#1" expanded="true" />
-            <element signature="e#7287#7293#1" expanded="true" />
-            <element signature="e#7350#7356#1" expanded="true" />
-            <element signature="e#7413#7419#1" expanded="true" />
-            <element signature="e#7476#7482#1" expanded="true" />
-            <element signature="e#7539#7545#1" expanded="true" />
-            <element signature="e#7602#7608#1" expanded="true" />
-            <element signature="e#7665#7671#1" expanded="true" />
-            <element signature="e#7728#7734#1" expanded="true" />
-            <element signature="e#7791#7797#1" expanded="true" />
-            <element signature="e#7854#7860#1" expanded="true" />
-            <element signature="e#7917#7923#1" expanded="true" />
-            <element signature="e#7980#7986#1" expanded="true" />
-            <element signature="e#8043#8049#1" expanded="true" />
-            <element signature="e#8106#8112#1" expanded="true" />
-            <element signature="e#8169#8175#1" expanded="true" />
-            <element signature="e#8232#8238#1" expanded="true" />
-            <element signature="e#8295#8301#1" expanded="true" />
-            <element signature="e#8358#8364#1" expanded="true" />
+            <element signature="e#1513#1519#0" expanded="true" />
+            <element signature="e#1876#1882#0" expanded="true" />
+            <element signature="e#2059#2065#0" expanded="true" />
+            <element signature="e#2328#2334#0" expanded="true" />
+            <element signature="e#7170#7176#1" expanded="true" />
+            <element signature="e#7233#7239#1" expanded="true" />
+            <element signature="e#7296#7302#1" expanded="true" />
+            <element signature="e#7359#7365#1" expanded="true" />
+            <element signature="e#7422#7428#1" expanded="true" />
+            <element signature="e#7485#7491#1" expanded="true" />
+            <element signature="e#7548#7554#1" expanded="true" />
+            <element signature="e#7611#7617#1" expanded="true" />
+            <element signature="e#7674#7680#1" expanded="true" />
+            <element signature="e#7737#7743#1" expanded="true" />
+            <element signature="e#7800#7806#1" expanded="true" />
+            <element signature="e#7863#7869#1" expanded="true" />
+            <element signature="e#7926#7932#1" expanded="true" />
+            <element signature="e#7989#7995#1" expanded="true" />
+            <element signature="e#8052#8058#1" expanded="true" />
+            <element signature="e#8115#8121#1" expanded="true" />
+            <element signature="e#8178#8184#1" expanded="true" />
+            <element signature="e#8241#8247#1" expanded="true" />
+            <element signature="e#8304#8310#1" expanded="true" />
+            <element signature="e#8367#8373#1" expanded="true" />
+            <element signature="e#8430#8436#1" expanded="true" />
+            <element signature="e#8493#8499#1" expanded="true" />
+            <element signature="e#8556#8562#1" expanded="true" />
+            <element signature="e#8619#8625#1" expanded="true" />
           </folding>
         </state>
       </provider>

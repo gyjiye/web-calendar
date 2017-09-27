@@ -1,0 +1,66 @@
+/*-----------------------------------------------------------*/
+/*---------------------- Global -------------------------*/
+/*-----------------------------------------------------------*/
+body, html, .content, .contain{
+    height: 100%;
+}
+
+.head{
+    display: none;
+}
+
+
+/*-----------------------------------------------------------*/
+/*---------------------- panel - place to show -------------------------*/
+/*-----------------------------------------------------------*/
+
+.panel{
+    /*height: calc(100% - 90px);*/
+    height: 100%;
+    margin: 0 -15px;
+    padding: 0;
+    display: flex;
+    border: none;
+}
+.panel-item{
+    display: inline-block;
+    /*background-color: rgba(165,200,238,1);*/
+    /*border: 1px solid #000;*/
+    width: 33.3%;
+}
+
+.summary{
+    width: 25%;
+    background-color: rgb(38, 138, 128);
+}
+
+.things-list{
+    width: 35%;
+    background-color: rgb(39, 130, 114);
+}
+
+.description{
+    /*display: none;*/
+    width: 40%;
+    background-color: rgb(219, 238, 212);
+}
+
+#greet-content{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2em;
+    color: rgb(240, 247, 247);
+}
+
+#greet-content>.greet-logo{
+    font-size: 2em;
+    float: left;
+}
+
+.word-after-greeting{
+    font-size: 0.5em;
+}
+
+
+/*-----------------------------------------------------------*/
+/*---------------------- Responsive -------------------------*/
+/*-----------------------------------------------------------*/

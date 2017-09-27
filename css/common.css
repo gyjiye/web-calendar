@@ -13,6 +13,16 @@ body{
     position: relative;
 }
 
+/*总容器*/
+.contain{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 
 
 /*----------------------------------------*/
@@ -40,14 +50,11 @@ body{
     color: rgb(240, 246, 255);
 }
 
-/*总容器*/
-.contain{
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
+
+/*----------------------------------------*/
+/*------------------ Content ----------------*/
+/*-------------------------------------------*/
+
 
 .head{
     padding: 20px 0;
@@ -111,4 +118,39 @@ body{
     width: 90%;
     background-color: rgb(157, 206, 101);
     margin: 5px 10px 5px 0;
+}
+
+/*logout button*/
+#logout{
+    /*background: transparent;*/
+    border: none;
+    margin-left: 15px;
+    padding-top: 12px;
+}
+
+
+/*----------------------------------------*/
+/*------------------ Responsive ----------------*/
+/*-------------------------------------------*/
+@media screen and (min-width: 780px) {
+    .sidebar{
+        left: 0;
+        float: left;
+    }
+
+    .content{
+        position: relative;
+        margin-left: 220px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body{
+        min-width: 360px;
+    }
+
 }
