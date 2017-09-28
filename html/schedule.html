@@ -63,56 +63,100 @@
 
     <!-- Content -->
     <div class="container-fluid content">
-        <!-- Header -->
-        <div class="row head">
-            <div class="col-xs-2">
-                <button type="button" class="hamburger head-item">
-                    <span class="hamb-top"></span>
-                    <span class="hamb-middle"></span>
-                    <span class="hamb-bottom"></span>
-                </button>
-            </div>
-
-            <div class="col-xs-8 text-center head-item">
-                    <span class="arrow">
-                        <a href="#"><span class="glyphicon glyphicon-menu-left"></span></a>
-                    </span>
-                <span id="data">DECEMBER 2017</span>
-                <span class="arrow">
-                        <a href="#"><span class="glyphicon glyphicon-menu-right"></span></a>
-                    </span>
-            </div>
-
-            <div class="col-xs-2 avatar-shell text-center head-item">
-                <div id="avatar">H</div>
-            </div>
-
-        </div>
-
-
 
         <!-- Schedule -->
-        <!--图标glyphicon glyphicon-pencil-->
-        <div class="panel">
+        <!-- TODO: 悬浮图标glyphicon glyphicon-pencil -->
+        <div class="mypanel">
+
+            <!-- the greeting and preview area -->
             <div class="panel-item summary">
+                <div class="button-drawer">
+                    <!-- TODO: 添加汉堡 -->
+                </div>
                 <div class="greet">
                     <div id="greet-content">
                         <div class="glyphicon glyphicon-magnet greet-logo"></div>
-                        <p>Good <span id="greet-content-changeable">morning!</span></p>
-                        <br>
-                        <p class="word-after-greeting">Today you have:</p>
+                        <div class="greet-content-word">
+                            <p id="morning">Good <span id="greet-content-changeable">morning!</span></p>
+                            <p class="word-after-greeting">Today you have:</p>
+                        </div>
                     </div>
 
-                    <div id="tasks"><span id="num-task">12 </span>tasks</div>
-                    <br>
-                    <div id="notification"><span id="num-nofitication">12 </span>notification</div>
-
-
+                    <!-- TODO: 修改鼠标悬浮状态 -->
+                    <div id="tasks">
+                        <span class="glyphicon glyphicon-check"></span>
+                        <span id="num-task">12 </span>
+                        tasks
+                    </div>
+                    <div id="notifications">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span id="num-nofitication">13 </span>
+                        notification
+                    </div>
                 </div>
             </div>
-            <div class="panel-item things-list">
 
+            <!-- things list -->
+            <div class="panel-item things-list pre-scrollable">
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
+                <div class="thing panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
             </div>
+
+
             <div class="panel-item description">
 
             </div>
