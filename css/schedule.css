@@ -5,16 +5,12 @@ body, html, .content, .contain{
     height: 100%;
 }
 
-.head{
-    display: none;
-}
-
 
 /*-----------------------------------------------------------*/
 /*---------------------- panel - place to show -------------------------*/
 /*-----------------------------------------------------------*/
 
-.panel{
+.mypanel{
     /*height: calc(100% - 90px);*/
     height: 100%;
     margin: 0 -15px;
@@ -45,22 +41,153 @@ body, html, .content, .contain{
     background-color: rgb(219, 238, 212);
 }
 
+.button-drawer{
+    width: 100%;
+    height: 50px;
+    display: none;
+}
+
 #greet-content{
     font-family: 'Oxygen', sans-serif;
     font-size: 2em;
     color: rgb(240, 247, 247);
+    margin-top: 20px;
+    padding-left: 12px;
 }
 
 #greet-content>.greet-logo{
     font-size: 2em;
-    float: left;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+.greet-content-word{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#morning{
+    font-weight: 600;
 }
 
 .word-after-greeting{
     font-size: 0.5em;
+    position: relative;
+    top: -10px;
+    left: 4px;
+}
+
+#tasks, #notifications{
+    height: 100px;
+    border-top: 1px solid rgba(144, 218, 212, 0.53);
+    padding-top: 20px;
+    padding-left: 25px;
+    color: rgb(240, 247, 247);
+    font-size: 1.5em;
+    font-weight: lighter;
+    }
+
+#notifications{
+    border-bottom: 1px solid rgba(144, 218, 212, 0.53);
+}
+
+/*-------------------- this to list --------------*/
+
+.thing{
+    border: 1px solid rgb(121, 187, 161);
+    height: 150px;
+    width: 99%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    box-shadow: 5px 5px 1px rgb(74, 119, 117);
+}
+
+.pre-scrollable{
+    max-height: 100%;
 }
 
 
-/*-----------------------------------------------------------*/
-/*---------------------- Responsive -------------------------*/
-/*-----------------------------------------------------------*/
+
+
+
+/*----------------------------------------*/
+/*------------------ Responsive ----------------*/
+/*-------------------------------------------*/
+
+/*============= set the sidebar ===============*/
+/*width>=820px*/
+@media screen and (min-width: 820px) {
+    .sidebar{
+        left: 0;
+        float: left;
+    }
+    .content{
+        position: relative;
+        margin-left: 220px;
+    }
+}
+/*-------- END ----------------*/
+
+/*========== set the content style ==========*/
+
+/*width>=1200px*/
+@media screen and (min-width: 1200px) {
+    .summary{
+        width: 25%;
+    }
+
+    .things-list{
+        width: 35%;
+    }
+
+    .description{
+        width: 40%;
+    }
+}
+
+/*------------ hide the description -----*/
+/*width<=1199px*/
+@media screen and (max-width: 1199px) {
+    .description{
+        display: none;
+    }
+}
+/*-------- END ----------------*/
+
+
+/*650px<=width<=1199px*/
+@media screen and (min-width: 650px) and (max-width:1199px) {
+    .summary{
+        width: 35%;
+        min-width: 300px;
+    }
+    .things-list{
+        width: 65%;
+    }
+}
+
+/*------------ hide the things-list -------------*/
+/*width<=649px*/
+@media screen and (max-width: 649px) {
+    .summary{
+        width: 100%;
+    }
+    .things-list{
+        display: none;
+    }
+}
+
+
+/*-------------- set the min-width of page ----------*/
+/*width<=300px*/
+@media screen and (max-width: 300px) {
+    body{
+        min-width: 300px;
+    }
+
+}
+
+/*==================== END ============================*/
