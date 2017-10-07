@@ -1,0 +1,1 @@
+1. schedule页面中textarea元素存在溢出现象，pc大约20行，移动端大约7行后即高度无法自适应，当前使用的方案为github项目[flexText](https://github.com/alexdunphy/flexText),知乎上有此问题[解决方案参考](https://www.zhihu.com/question/32295778),如果有时间建议重写textarea高度自适应功能

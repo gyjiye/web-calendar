@@ -13,17 +13,24 @@
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <!-- Bootstrap -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--bootstrap switch-->
+    <link rel="stylesheet" href="../css/bootstrap-switch.css">
     <!--my style-->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/schedule.css">
+    <!-- the scroller plugin -->
+    <link rel="stylesheet" href="../css/nanoscroller.css">
+    <!--the flexText plugin-->
+    <link rel="stylesheet" href="../css/flexText.css">
     <!-- logo font -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
     <!-- calendar font -->
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-    <!--panel on schedule =========  oxygen-->
+    <!--panel on schedule font =========  oxygen-->
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <!-- the scroller plugin -->
-    <link rel="stylesheet" href="../css/nanoscroller.css">
+    <!--description font ====== roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100i" rel="stylesheet">
+
 </head>
 
 <body>
@@ -99,7 +106,7 @@
             </div>
 
             <!-- things list -->
-            <div class="panel-item things-list nano" id="about">
+            <div class="panel-item things-list nano">
                 <div class="nano-content">
                     <div class="task-item" data-index="1">
                         <span><input type="checkbox"></span>
@@ -196,28 +203,90 @@
 
             </div>
 
-
-            <div class="panel-item description">
-
+            <!--description & share-->
+            <div class="panel-item description nano">
+                <!--scrolling content-->
+                <div class="nano-content">
+                    <!--the description part of schedule-->
+                    <div class="part-des">
+                        <!--responsive part, display in small screen to return to the things-list-->
+                        <div class="return">
+                            <div class="des-head">description</div>
+                        </div>
+                        <!-- part for name, date&time and description content-->
+                        <div>
+                            <div class="des-item-name form-group">
+                                <label for="id-des-item-name">item</label>
+                                <input type="text" class="form-control" id="id-des-item-name" placeholder="年轻人少熬夜" webfont="true" fontid="832">
+                            </div>
+                            <div class="des-item-time">
+                                <label for="id-des-item-time-start">from</label>
+                                <div class="form-group" id="time-start-outer"><input type="text" class="form-control" id="id-des-item-time-start" placeholder="2017-10/4 23:00"></div>
+                                <label for="id-des-item-time-end">to</label>
+                                <div class="form-group"><input type="text" class="form-control" id="id-des-item-time-end" placeholder="2017-10/4 23:01"></div>
+                            </div>
+                            <div class="des-item-reminder">
+                                <label for="id-des-item-reminder">reminder</label>
+                                <input type="text" class="form-control" id="id-des-item-reminder" placeholder="2017-10/4 23:00">
+                            </div>
+                            <div class="des-item-content form-group">
+                                <label for="id-des-item-content">content</label>
+                                <textarea class="form-control" id="id-des-item-content" cols="30" rows="30" placeholder="young man, do not stay up late" webfont="true" fontid="832"></textarea>
+                            </div>
+                        </div>
+                        <!--choice part, choice to delete, save, remind or share-->
+                        <div class="choice">
+                                <button type="button" class="btn btn-info" id="share-button"><span class="glyphicon glyphicon-share-alt"></span>Share</button>
+                                <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
+                                <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+                        </div>
+                    </div>
+                    <!--the share list of a thing-->
+                    <div class="part-share">
+                        <!--same of the description part, a header, but not responsive-->
+                        <div class="return">
+                            <div class="des-head">Share</div>
+                        </div>
+                        <!--master switch to share-->
+                        <div>
+                            <label for="master-switch-share">
+                                <input type="checkbox" name="my-checkbox" id="master-switch-share" checked>
+                                <span>share or not</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 
-
-
 </div>
+
+</body>
 
 </html>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- bootstrap -->
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--bootstrap switch-->
+<script src="../js/bootstrap-switch.min.js"></script>
 <!-- scroller js -->
 <script type="text/javascript" src="../js/jquery,nanoscroller.js"></script>
-
+<!--flexText plugin js-->
+<script type="text/javascript" src="../js/jquery.flexText.min.js"></script>
+<!--字由字体 汉仪旗黑-55S， 注意申请白名单-->
+<script type="text/javascript" src="http://hellofont.cn/resource/js/jquery.hywebfont.min.js"></script>
 <script type="text/javascript">
-    $(".nano").nanoScroller();
+    $(function() {
+        //    init the scroller
+        $(".nano").nanoScroller();
+        //    init the textarea for flexText
+        $('textarea').flexText();
+        //    init the bootstrapSwitch checkbox;
+        $('input[name=my-checkbox]').bootstrapSwitch({});
+    });
 </script>
 </body>

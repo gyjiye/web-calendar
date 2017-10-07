@@ -1,45 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>宽度自适应</title>
-        <style media="screen">
-            .wrap{
-                background: rgb(48, 167, 168);
-            }
-            .clearfix::after{
-                content: "";
-                clear: both;
-                display: block;
-            }
-            .left{
-                float: left;
-                width: 100px;
-                background-color: rgb(191, 12, 12);
-                height: 180px;
-            }
-            .right{
-                float: right;
-                width: 150px;
-                background-color: rgb(48, 29, 140);
-                height: 200px;
-            }
-            .center{
-                background-color: rgb(193, 228, 52);
-                margin-left: 110px;
-                margin-right: 160px;
-                height: 150px;
-            }
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turn checkboxes and radio buttons in toggle switches.">
+    <meta name="author" content="Mattia Larentis, Emanuele Marchi and Peter Stein">
+    <title>Bootstrap Switch · Turn checkboxes and radio buttons in toggle switches</title>
+    <!--&lt;!&ndash;<link href="docs/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-switch.min.css" rel="stylesheet">
+    <!--<link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+    <link href="docs/css/main.css" rel="stylesheet">-->
+</head>
+<body>
+<div class="switch">
+    <input class="form-control" type="checkbox" checked>
+</div>
+<div>
+    <input type="checkbox" checked>
+</div>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-switch.min.js"></script>
 
-        </style>
-    </head>
-    <body>
-        <div class="wrap clearfix">
-            <div class="left">left</div>
-            <div class="right">right</div>
-            <div class="center">center</div>
-
-        </div>
-
-    </body>
+<script>
+    $(function(argument) {
+        $('[type="checkbox"]').bootstrapSwitch({});
+    })
+</script>
+</body>
 </html>

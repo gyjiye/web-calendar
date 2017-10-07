@@ -39,7 +39,8 @@ body, html, .content, .contain{
 .description{
     /*display: none;*/
     width: 40%;
-    background-color: rgb(219, 238, 212);
+    /*background-color: rgb(219, 238, 212);*/
+    background-color: #F7F7F7;
 }
 
 .button-drawer{
@@ -124,18 +125,80 @@ body, html, .content, .contain{
     /*font-size: 1.3em;*/
 }
 
-/*------------------- scroll bar ------------------------*/
+/*------ scroll bar of things-list------------------*/
 .nano > .nano-content{
     padding-right: 4px;
     padding-left: 6px;
 }
 .nano > .nano-pane   { background: #888; }
 .nano > .nano-pane > .nano-slider { background: #111; }
+/*--------------------- END scroll bar --------------------------*/
+
+/*-------------------- description --------------*/
+.description{  font-family: 'Oxygen', sans-serif;  }
+
+.part-des{ display: none;}
+/*.part-share{ display: none}*/
+.return{
+    width: 100%;
+    height: 50px;
+    /*display: none;*/
+    border: 1px solid black;
+}
+
+.des-head{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    color: #333333;
+    font-size: x-large;
+    margin: 5px;
+}
+
+.des-item-name, .des-item-time, .des-item-content, .des-item-reminder{
+    margin: 10px ;
+}
+.des-item-name{ margin-top: 0px; }
+#time-start-outer{ margin-bottom: 3px;}
+
+.description label{
+    color: #C3C3D4;
+    font-size: medium;
+    margin: 10px 0px 5px 3px;
+}
+
+.des-item-time input
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#id-des-item-name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.des-item-time input{  width: 50%; }
+
+#to{
+    color: #C3C3D4;
+    /*line-height: 1em;*/
+}
+
+.description input{ border: none; }
+
+#id-des-item-content{ border: none; }
+
+.choice{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#delete-button, #submit-button{
+    float: right;
+    margin-right: 10px;
+}
+
 /*--------------------- END -------------------------------*/
-
-
-
-
 
 
 /*----------------------------------------*/
