@@ -207,11 +207,13 @@
             <div class="panel-item description nano">
                 <!--scrolling content-->
                 <div class="nano-content">
+
                     <!--the description part of schedule-->
                     <div class="part-des">
                         <!--responsive part, display in small screen to return to the things-list-->
                         <div class="return">
                             <div class="des-head">description</div>
+                            <button type="button" class="close" aria-label="Close"><span aria-hidden="true" id="des-close">&times;</span></button>
                         </div>
                         <!-- part for name, date&time and description content-->
                         <div>
@@ -221,38 +223,121 @@
                             </div>
                             <div class="des-item-time">
                                 <label for="id-des-item-time-start">from</label>
-                                <div class="form-group" id="time-start-outer"><input type="text" class="form-control" id="id-des-item-time-start" placeholder="2017-10/4 23:00"></div>
+                                <div class="form-group" id="time-start-outer"><input type="text" class="form-control" id="id-des-item-time-start" placeholder="2017-10-4 23:00"></div>
                                 <label for="id-des-item-time-end">to</label>
-                                <div class="form-group"><input type="text" class="form-control" id="id-des-item-time-end" placeholder="2017-10/4 23:01"></div>
+                                <div class="form-group"><input type="text" class="form-control" id="id-des-item-time-end" placeholder="2017-10-4 23:01"></div>
                             </div>
                             <div class="des-item-reminder">
                                 <label for="id-des-item-reminder">reminder</label>
-                                <input type="text" class="form-control" id="id-des-item-reminder" placeholder="2017-10/4 23:00">
+                                <input type="text" class="form-control" id="id-des-item-reminder" placeholder="2017-10-4 23:00">
                             </div>
                             <div class="des-item-content form-group">
                                 <label for="id-des-item-content">content</label>
-                                <textarea class="form-control" id="id-des-item-content" cols="30" rows="30" placeholder="young man, do not stay up late" webfont="true" fontid="832"></textarea>
+                                <textarea class="form-control" id="id-des-item-content" cols="30" rows="20" placeholder="young man, do not stay up late" webfont="true" fontid="832"></textarea>
                             </div>
                         </div>
+
                         <!--choice part, choice to delete, save, remind or share-->
                         <div class="choice">
-                                <button type="button" class="btn btn-info" id="share-button"><span class="glyphicon glyphicon-share-alt"></span>Share</button>
+                                <button type="button" class="btn btn-info" id="share-button"><span class="glyphicon glyphicon-share-alt"></span> Share</button>
                                 <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
                                 <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
                         </div>
                     </div>
-                    <!--the share list of a thing-->
+
+                    <!--the share target list of a thing-->
                     <div class="part-share">
                         <!--same of the description part, a header, but not responsive-->
                         <div class="return">
                             <div class="des-head">Share</div>
+                            <button type="button" class="close" aria-label="Close" id="share-close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <!--master switch to share-->
-                        <div>
+                        <div class="master-switch-share-outer">
                             <label for="master-switch-share">
                                 <input type="checkbox" name="my-checkbox" id="master-switch-share" checked>
                                 <span>share or not</span>
                             </label>
+                        </div>
+                        <!--share item list-->
+                        <ul class="list-group">
+                            <li class="checkbox list-group-item share-item active">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="" checked="checked">
+                                     friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                            <li class="checkbox list-group-item share-item">
+                                <label>
+                                    <input type="checkbox"  name="share-item-checkbox" value="">
+                                    friend one
+                                </label>
+                            </li>
+                        </ul>
+                        <!--choice to submit or abandon-->
+                        <div class="share-choice">
+                                <button type="button" class="btn btn-danger" id="share-cancel"> Cancel </button>
+                                <button type="button" class="btn btn-primary" id="share-submit" > Submit </button>
                         </div>
                     </div>
                 </div>
@@ -274,19 +359,10 @@
 <!--bootstrap switch-->
 <script src="../js/bootstrap-switch.min.js"></script>
 <!-- scroller js -->
-<script type="text/javascript" src="../js/jquery,nanoscroller.js"></script>
+<script type="text/javascript" src="../js/jquery.nanoscroller.js"></script>
 <!--flexText plugin js-->
 <script type="text/javascript" src="../js/jquery.flexText.min.js"></script>
 <!--字由字体 汉仪旗黑-55S， 注意申请白名单-->
 <script type="text/javascript" src="http://hellofont.cn/resource/js/jquery.hywebfont.min.js"></script>
-<script type="text/javascript">
-    $(function() {
-        //    init the scroller
-        $(".nano").nanoScroller();
-        //    init the textarea for flexText
-        $('textarea').flexText();
-        //    init the bootstrapSwitch checkbox;
-        $('input[name=my-checkbox]').bootstrapSwitch({});
-    });
-</script>
+<script type="text/javascript" src="../js/schedule.js"></script>
 </body>

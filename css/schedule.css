@@ -130,20 +130,26 @@ body, html, .content, .contain{
     padding-right: 4px;
     padding-left: 6px;
 }
-.nano > .nano-pane   { background: #888; }
+.nano > .nano-pane   {
+    background: #888;
+    visibility: hidden;
+}
 .nano > .nano-pane > .nano-slider { background: #111; }
 /*--------------------- END scroll bar --------------------------*/
 
-/*-------------------- description --------------*/
+/*-------------------- END things to list --------------*/
+
+
+/*-------------------- description & share --------------*/
 .description{  font-family: 'Oxygen', sans-serif;  }
 
-.part-des{ display: none;}
-/*.part-share{ display: none}*/
+/*.part-des{ display: none;}*/
+.part-share{ display: none}
+
+/*---------------- common header of part-des & part-des-----------*/
 .return{
     width: 100%;
     height: 50px;
-    /*display: none;*/
-    border: 1px solid black;
 }
 
 .des-head{
@@ -154,6 +160,16 @@ body, html, .content, .contain{
     margin: 5px;
 }
 
+.close{
+    width: 50px;
+    height: 50px;
+    outline: none;
+}
+
+.close>span{ font-size: 2em; }
+/*---------------- END common header of part-des & part-des-----------*/
+
+/*----------------- part-des -------------------*/
 .des-item-name, .des-item-time, .des-item-content, .des-item-reminder{
     margin: 10px ;
 }
@@ -197,8 +213,35 @@ body, html, .content, .contain{
     float: right;
     margin-right: 10px;
 }
+/*----------------- END part-des -------------------*/
+
+/*----------------- part-share -------------------*/
+.master-switch-share-outer{ margin-left: 3px}
+.share-item{ margin: 6px; }
+
+.share-item:hover{
+    border-color: rgba(82,168,236,.8);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+    border-radius: 3px;
+}
+
+.share-choice{
+    /*border: 1px solid black;*/
+    text-align: right;
+}
+
+#share-cancel{}
+#share-submit{
+    margin-right: 9px;
+    margin-left: 3px;
+}
+
+
+/*----------------- END part-share -------------------*/
+
 
 /*--------------------- END -------------------------------*/
+
 
 
 /*----------------------------------------*/
