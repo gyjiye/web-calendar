@@ -47,11 +47,21 @@ body{
 
 .sidebar a{
     color: rgb(240, 246, 255);
+    outline: 0px auto -webkit-focus-ring-color;
+}
+#nav-list > li.h2 > a:focus,
+#nav-list > li.h2 > a:hover,
+#nav-list > li.h2:focus,
+#nav-list > li.h2:hover{
+    background-color: #525858;
 }
 
-
-
-
+.sidebar li.list-item:hover,
+.sidebar li.list-item:focus,
+.sidebar li.list-item a:focus,
+.sidebar li.list-item a:hover{
+    background-color: #3D4343;
+}
 
 /*----------------------------------------*/
 /*------------------ Content ----------------*/

@@ -91,7 +91,6 @@
                         </div>
                     </div>
 
-                    <!-- TODO: 修改鼠标悬浮状态 -->
                     <div id="tasks">
                         <span class="glyphicon glyphicon-check"></span>
                         <span id="num-task">12 </span>
@@ -230,6 +229,14 @@
                             <div class="des-item-reminder">
                                 <label for="id-des-item-reminder">reminder</label>
                                 <input type="text" class="form-control" id="id-des-item-reminder" placeholder="2017-10-4 23:00">
+                                <label>
+                                    <input type="checkbox" name="my-checkbox" id="des-item-reminder-email" checked>
+                                    <span>email&emsp;</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="my-checkbox" id="des-item-reminder-message" checked>
+                                    <span>message</span>
+                                </label>
                             </div>
                             <div class="des-item-content form-group">
                                 <label for="id-des-item-content">content</label>
@@ -349,9 +356,6 @@
 </div>
 
 </body>
-
-</html>
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <!-- bootstrap -->
@@ -365,4 +369,7 @@
 <!--字由字体 汉仪旗黑-55S， 注意申请白名单-->
 <script type="text/javascript" src="http://hellofont.cn/resource/js/jquery.hywebfont.min.js"></script>
 <script type="text/javascript" src="../js/schedule.js"></script>
-</body>
+</html>
+
+
+
