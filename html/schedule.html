@@ -30,7 +30,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <!--description font ====== roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i" rel="stylesheet">
-
+    <!--buttons-->
+    <link rel="stylesheet" href="../css/buttons.css">
 </head>
 
 <body>
@@ -76,7 +77,10 @@
         <!-- Schedule -->
         <!-- TODO: 悬浮图标glyphicon glyphicon-pencil -->
         <div class="mypanel">
-
+            <!--button to add task-->
+            <button class="button button-glow button-circle button-action button-jumbo add-task-button ">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
             <!-- the greeting and preview area -->
             <div class="panel-item summary">
                 <div class="button-drawer">
@@ -110,94 +114,9 @@
                     <div class="task-item" data-index="1">
                         <span><input type="checkbox"></span>
                         <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
+                        <span class="task-content">task-content task-content task-co </span>
                     </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <!-- TODO: 内容需要做字数限制 <=17字-->
-                        <span class="task-content">task-content task-content task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
-                    <div class="task-item" data-index="1">
-                        <span><input type="checkbox"></span>
-                        <span class="task-content">task-content </span>
-                    </div>
+
                 </div>
 
             </div>
@@ -357,7 +276,7 @@
 
 </body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
 <!-- bootstrap -->
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <!--bootstrap switch-->
@@ -368,6 +287,9 @@
 <script type="text/javascript" src="../js/jquery.flexText.min.js"></script>
 <!--字由字体 汉仪旗黑-55S， 注意申请白名单-->
 <script type="text/javascript" src="http://hellofont.cn/resource/js/jquery.hywebfont.min.js"></script>
+<!--plugin - store-->
+<script type="text/javascript" src="../node_modules/store/dist/store.modern.min.js"></script>
+<!--my js-->
 <script type="text/javascript" src="../js/schedule.js"></script>
 </html>
 

@@ -1,9 +1,15 @@
 // ===============global variables=============================
-var size = 1,// window size with 3 for large, 2 for middle, 1 for small
-    things_list = $('.things-list'), // things list
-    description = $('.description'), // description
-    part_share = $('.part-share'), //description part-share
-    des_close = $('.part-des .close'); // description des-part close
+var size = 3,// window size with 3 for large, 2 for middle, 1 for small
+    prior_size = 0, // screen size before, initial value 0 to check at beginning
+    $summary = $('.summary'), // summary
+    $things_list = $('.things-list'), // things list
+    $description = $('.description'), // description
+    $part_share = $('.part-share'), //description part-share
+    $des_close = $('.part-des .close'), // description des-part close
+    $things_list_task_item = $('.task-item'), // things-list task-list
+    $task_item_container = $('.things-list .nano-content'); // container of task-items
+
+
 
 
 // =============== END global variables=============================
@@ -23,20 +29,36 @@ $(function() {
 
 // =============== media query =============================
 // page init with different screen size
+
 function page_init_large() {
-    description.show();
-    description.css('width', '40%');
-    des_close.hide();
+    $summary.css({'width':'25%', 'min-width':'300px'});
+    // $summary.css('width', '25%');
+    $things_list.css('width', '35%');
+    $description.show();
+    $description.css('width', '40%');
+    $des_close.hide();
+    // console.log('test - page_init_large');
 }
 
 function page_init_middle() {
-    description.css('width', '65%');
-    des_close.show();
+    $things_list.show();
+    $description.css('display', 'none');
+    $summary.css({'width':'35%', 'min-width':'300px'});
+    // $summary.css('width', '35%');
+    $things_list.css('width', '65%');
+    $description.css('width', '65%');
+    $des_close.show();
+    // console.log('test - page_init_middle');
+}
+
+function page_init_small() {
+    $summary.css('width', '100%');
+    $things_list.hide();
 }
 
 $(window).resize(function () {
     var windowWidth = $(window).width();
-    console.log(windowWidth);
+    // console.log(windowWidth);
     if(windowWidth >= 1200) {
         size = 3;
         page_init_large();
@@ -46,7 +68,23 @@ $(window).resize(function () {
     } else {
         size = 1;
     }
-    // console.log(large, middle, small);
+    // console.log(prior_size, size);
+    if (size !== prior_size) {
+        prior_size = size;
+        switch (size) {
+            case 3:
+                page_init_large();
+                break;
+            case 2:
+                page_init_middle();
+                break;
+            case 1:
+                page_init_small();
+                break;
+            default:
+                console.log('size has been changes, but no init function to choice.');
+        }
+    }
 });
 // =============== END media query =============================
 
@@ -56,8 +94,8 @@ $(window).resize(function () {
 (function () {
    var share = $('#share-button');
     function move_to_sharepage() {
-        if(!part_share.hasClass('part-share-show')){
-            part_share.addClass('part-share-show');
+        if(!$part_share.hasClass('part-share-show')){
+            $part_share.addClass('part-share-show');
         }
         else { console.log('part-share already have class part-share-show') }
     }
@@ -65,13 +103,13 @@ $(window).resize(function () {
 })();
 
 function move_away_sharepage() {
-    if(part_share.hasClass('part-share-show')){
-        part_share.removeClass('part-share-show');
+    if($part_share.hasClass('part-share-show')){
+        $part_share.removeClass('part-share-show');
     }
     else {
         console.log("part-share doesn't have class part-share-show");
     }
-};
+}
 
 // share close
 (function () {
@@ -80,31 +118,38 @@ function move_away_sharepage() {
 })();
 
 function move_away_despage() {
-    description.hide();
-    things_list.show();
+    $description.hide();
+    $things_list.show();
 }
 
 // des close
-(function () { des_close.on('click', move_away_despage); })();
+(function () { $des_close.on('click', move_away_despage); })();
 
-// =========================================
-// on middle size windows
 
-// click task-item to call description
+// ================ END add event to button ====================
+
+// ================ call in main parts====================
+
+
+// click task-item to call description on middle size windows
 (function () {
-    var task_item_middle = $('.task-item');
     function move_to_despage() {
         if(size < 3) {
             // only works on middle and small screen
             // console.log("click");
-            things_list.hide();
-            description.show();
+            $things_list.hide();
+            $description.show();
+            // console.log('test - click task-item to call description');
         }
-    };
+    }
 
-    task_item_middle.on('click', move_to_despage);
+    $things_list_task_item.on('click', move_to_despage);
 })();
 
+// ================ END call in main parts====================
+
+// ================ render content===========================
 
 
-// ================ END add event to button ====================
+// ================ END render content====================
+

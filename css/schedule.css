@@ -20,6 +20,17 @@ body, html, .content, .contain{
     border: none;
     position: relative;
 }
+
+.add-task-button{
+    position: absolute;
+    z-index: 101;
+    top:90%;
+}
+.add-task-button>span{
+    display: inline-block;
+    margin-top: 18px;
+    margin-right: 7px;
+}
 .panel-item{
     display: inline-block;
     /*background-color: rgba(165,200,238,1);*/
@@ -162,11 +173,11 @@ body, html, .content, .contain{
     position: absolute;
     right: -900px;
     top:0;
-    -webkit-transition: right 1s;
-    -moz-transition: right 1s;
-    -ms-transition: right 1s;
-    -o-transition: right 1s;
-    transition: right 1s;
+    -webkit-transition: right 1s ease;
+    -moz-transition: right 1s ease;
+    -ms-transition: right 1s ease;
+    -o-transition: right 1s ease;
+    transition: right 1s ease;
     height: 100%;
     width: 100%;
     background-color: #F7F7F7;
@@ -207,13 +218,13 @@ body, html, .content, .contain{
 .des-item-name, .des-item-time, .des-item-content, .des-item-reminder{
     margin: 10px ;
 }
-.des-item-name{ margin-top: 0px; }
+.des-item-name{ margin-top: 0; }
 #time-start-outer{ margin-bottom: 3px;}
 
 .description label{
     color: #C3C3D4;
     font-size: medium;
-    margin: 10px 0px 5px 3px;
+    margin: 10px 0 5px 3px;
 }
 
 .des-item-time input
@@ -287,6 +298,7 @@ body, html, .content, .contain{
 
 /*============= set the sidebar ===============*/
 /*width>=820px*/
+
 @media screen and (min-width: 820px) {
     .sidebar{
         left: 0;
@@ -302,52 +314,55 @@ body, html, .content, .contain{
 /*========== set the content style ==========*/
 
 /*width>=1200px*/
-@media screen and (min-width: 1200px) {
-    .summary{
-        width: 25%;
-        min-width: 300px;
-    }
+/*finish in js part*/
+/*@media screen and (min-width: 1200px) {*/
+    /*.summary{*/
+        /*width: 25%;*/
+        /*min-width: 300px;*/
+    /*}*/
 
-    .things-list{
-        width: 35%;
-    }
+    /*.things-list{*/
+        /*width: 35%;*/
+    /*}*/
 
-    .description{
-        width: 40%;
-    }
-}
+    /*.description{*/
+        /*width: 40%;*/
+    /*}*/
+/*}*/
 
 /*------------ hide the description -----*/
 /*width<=1199px*/
-@media screen and (max-width: 1199px) {
-    .description{
-        display: none;
-    }
-}
+/*@media screen and (max-width: 1199px) {*/
+    /*.description{*/
+        /*display: none;*/
+    /*}*/
+/*}*/
 /*-------- END ----------------*/
 
 
 /*650px<=width<=1199px*/
-@media screen and (min-width: 650px) and (max-width:1199px) {
-    .summary{
-        width: 35%;
-        min-width: 300px;
-    }
-    .things-list{
-        width: 65%;
-    }
-}
+/*finish in js part*/
+/*@media screen and (min-width: 650px) and (max-width:1199px) {*/
+    /*.summary{*/
+        /*width: 35%;*/
+        /*min-width: 300px;*/
+    /*}*/
+    /*.things-list{*/
+        /*width: 65%;*/
+    /*}*/
+/*}*/
 
 /*------------ hide the things-list -------------*/
 /*width<=649px*/
-@media screen and (max-width: 649px) {
-    .summary{
-        width: 100%;
-    }
-    .things-list{
-        display: none;
-    }
-}
+/*finish in js part*/
+/*@media screen and (max-width: 649px) {*/
+    /*.summary{*/
+        /*width: 100%;*/
+    /*}*/
+    /*.things-list{*/
+        /*display: none;*/
+    /*}*/
+/*}*/
 
 
 /*-------------- set the min-width of page ----------*/

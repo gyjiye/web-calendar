@@ -1,180 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9beb3b89-d369-4d81-94cc-d060dbc6ee6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-switch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-switch.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-switch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-switch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/problems.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reference/plugin/toggle-button(free)/README_by_myself.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/css/component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/fontawesome.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/fontawesome.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/fontawesome.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/fontawesome.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/Read Me.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/ecoico.dev.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/ecoico.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/ecoico.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/ecoico.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/ecoico.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/fonts/timelineicons/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/jq22.com-VerticalTimeline.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/VerticalTimeline/js/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/css/nanoscroller.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/css/nanoscroller.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/css/nanoscroller.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/dev.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/images/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/images/gh-ribbon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/images/h1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/ga.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/jquery.nanoscroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/jquery.nanoscroller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/jquery.nanoscroller.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/jquery.nanoscroller.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/jquery.nanoscroller.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/javascripts/overthrow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/bin/readme.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/content.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/css/nanoscroller.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/css/nanoscroller.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/css/nanoscroller.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/images/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/images/h1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/jquery.nanoscroller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/jquery.nanoscroller.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/jquery.nanoscroller.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/jquery.nanoscroller.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/jquery.nanoscroller.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/js/overthrow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日历插件/schedule/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日历插件/schedule/.idea/schedule.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日历插件/schedule/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日历插件/schedule/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日历插件/schedule/schedule.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/css/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/css/fullcalendar.print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/buttons-disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/buttons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/chosen-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/dribble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/forrst.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/magnifier_grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/natural_paper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/preload.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/slider.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/slider_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/spinner_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/toggle-subnav-down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/toggle-subnav-up-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/toolbar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/transp50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/img/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/js/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/js/jquery-1.7.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/日程表样式/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/备份/时间轴.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/.idea/schedule.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/schedule.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/.idea/日程表样式.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/css/fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/css/fullcalendar.print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/buttons-disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/buttons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/chosen-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/dribble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/forrst.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/light.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/magnifier_grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/natural_paper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/preload.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/slider.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/slider_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/spinner_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/toggle-subnav-down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/toggle-subnav-up-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/toolbar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/transp50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/img/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/js/fullcalendar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/js/jquery-1.7.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/jquery插件/日程表样式/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/朝夕界面/Screenshot_2017-09-20-16-43-43-276_com.zhaoxi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/朝夕界面/Screenshot_2017-09-20-16-43-56-753_com.zhaoxi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/朝夕界面/Screenshot_2017-09-20-16-44-02-109_com.zhaoxi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/朝夕界面/Screenshot_2017-09-20-16-44-13-869_com.zhaoxi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/朝夕界面/Screenshot_2017-09-20-16-44-17-628_com.zhaoxi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reference/朝夕界面/Screenshot_2017-09-20-16-44-25-337_com.zhaoxi.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/temp/style.css" />
+    <list default="true" id="64fd111b-6249-40a6-a14f-2cc09db1a147" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/buttons.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< Updated upstream
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/schedule.css" afterPath="$PROJECT_DIR$/css/schedule.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/schedule.html" afterPath="$PROJECT_DIR$/html/schedule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/test.html" afterPath="$PROJECT_DIR$/html/test.html" />
-=======
->>>>>>> Stashed changes
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/schedule.js" afterPath="$PROJECT_DIR$/js/schedule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -187,46 +20,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7033534">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
+          <file leaf-file-name="schedule.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/schedule.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="614">
+                  <caret line="150" column="61" lean-forward="false" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="schedule.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/html/schedule.html">
               <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-                <state relative-caret-position="469">
-                  <caret line="288" column="11" lean-forward="false" selection-start-line="288" selection-start-column="11" selection-end-line="288" selection-end-column="34" />
+                <state relative-caret-position="609">
+                  <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
                   <folding>
                     <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
-=======
-                <state relative-caret-position="315">
-                  <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="month.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/html/month.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-                  <folding />
->>>>>>> Stashed changes
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/html/test.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-119">
-                  <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -234,47 +51,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="schedule.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/schedule.css">
               <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-                <state relative-caret-position="280">
-                  <caret line="146" column="1" lean-forward="false" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
-=======
-                <state relative-caret-position="89">
-                  <caret line="189" column="19" lean-forward="false" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+                <state relative-caret-position="441">
+                  <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="week.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/week.css">
+          <file leaf-file-name="buttons.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/buttons.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="924">
-                  <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/common.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2751">
-                  <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/responsive.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
->>>>>>> Stashed changes
+                <state relative-caret-position="63">
+                  <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -287,16 +79,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.overlay</find>
-      <find>font</find>
-      <find>font-family</find>
+      <find>task</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -305,24 +94,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package-lock.json" />
-        <option value="$PROJECT_DIR$/month.html" />
-        <option value="$PROJECT_DIR$/month/month.html" />
-        <option value="chrome-extension://elicpjhcidhpjomhibiffojpinpmmpil/video/content.js" />
-        <option value="$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" />
-        <option value="$PROJECT_DIR$/css/month.css" />
-        <option value="$PROJECT_DIR$/css/week.css" />
-        <option value="$PROJECT_DIR$/html/month.html" />
-        <option value="$PROJECT_DIR$/css/sidebar.css" />
-        <option value="$PROJECT_DIR$/html/week.html" />
-        <option value="$PROJECT_DIR$/css/common.css" />
-        <option value="$PROJECT_DIR$/problems" />
-        <option value="$PROJECT_DIR$/problems.md" />
-        <option value="$PROJECT_DIR$/reference/plugin/toggle-button/README_by_myself.md" />
-        <option value="$PROJECT_DIR$/css/schedule.css" />
-        <option value="$PROJECT_DIR$/reference/plugin/bootstrap-switch/Bootstrap20160114/test.html" />
-        <option value="$PROJECT_DIR$/html/test.html" />
+        <option value="$PROJECT_DIR$/js/schedule.js" />
+        <option value="$PROJECT_DIR$/css/buttons.css" />
         <option value="$PROJECT_DIR$/html/schedule.html" />
+        <option value="$PROJECT_DIR$/css/schedule.css" />
       </list>
     </option>
   </component>
@@ -336,15 +111,16 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3" />
-    <option name="width" value="1620" />
-    <option name="height" value="920" />
+    <option name="x" value="2032" />
+    <option name="y" value="212" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -358,95 +134,51 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< Updated upstream
-      <pane id="Scope" />
-=======
->>>>>>> Stashed changes
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <expand>
             <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="calendar" type="cbb8eebc:String" user="calendar" />
             </path>
             <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="calendar" type="cbb8eebc:String" user="calendar" />
+              <item name="css" type="cbb8eebc:String" user="css" />
             </path>
             <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="calendar" type="cbb8eebc:String" user="calendar" />
+              <item name="html" type="cbb8eebc:String" user="html" />
             </path>
             <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="calendar" type="cbb8eebc:String" user="calendar" />
+              <item name="js" type="cbb8eebc:String" user="js" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< Updated upstream
-=======
-      <pane id="Scope" />
->>>>>>> Stashed changes
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="calendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="calendar" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\files\code\web-calendar\css" />
-      <recent name="C:\files\code\web-calendar\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\files\code\web-calendar\temp" />
-      <recent name="F:\code\calendar\month" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -460,129 +192,57 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.schedule.html (1)">
-    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web-calendar/reference/plugin/bootstrap-switch/Bootstrap20160114/index.html" />
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web-calendar/reference/plugin/toggle-button/index.html" />
-    <configuration name="schedule.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web-calendar/html/schedule.html" />
-    <configuration name="test.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web-calendar/html/test.html" />
-    <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web-calendar/reference/plugin/bootstrap-switch/Bootstrap20160114/test.html" />
-    <configuration name="week.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/calendar/html/week.html" />
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.week.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.schedule.html (1)" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.test.html (1)" />
+  <component name="RunManager" selected="JavaScript Debug.schedule.html">
+    <configuration name="schedule.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/calendar/html/schedule.html" />
+    <configuration name="schedule.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="schedule.js" working-dir="$PROJECT_DIR$/js" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.schedule.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.schedule.html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.schedule.html (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.html (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.schedule.html" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.schedule.js" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9beb3b89-d369-4d81-94cc-d060dbc6ee6f" name="Default" comment="" />
-      <created>1505905950697</created>
+      <changelist id="64fd111b-6249-40a6-a14f-2cc09db1a147" name="Default" comment="" />
+      <created>1507812832130</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1505905950697</updated>
-      <workItem from="1505905952181" duration="7189000" />
-      <workItem from="1505990469884" duration="3118000" />
-      <workItem from="1505998831001" duration="9000" />
-      <workItem from="1506000503450" duration="953000" />
-      <workItem from="1506009465963" duration="18000" />
-      <workItem from="1506048054224" duration="6010000" />
-      <workItem from="1506068946265" duration="4269000" />
-      <workItem from="1506138419795" duration="598000" />
-      <workItem from="1506168700585" duration="6156000" />
-      <workItem from="1506405815162" duration="2361000" />
-      <workItem from="1506409275924" duration="608000" />
-      <workItem from="1506431686488" duration="3119000" />
-      <workItem from="1506434948582" duration="249000" />
-      <workItem from="1506486977321" duration="11710000" />
-      <workItem from="1506515489196" duration="4603000" />
-      <workItem from="1506594018996" duration="1285000" />
-      <workItem from="1506599545589" duration="215000" />
-      <workItem from="1506606061969" duration="253000" />
-      <workItem from="1506651931886" duration="558000" />
-      <workItem from="1506656557317" duration="33000" />
-<<<<<<< Updated upstream
-      <workItem from="1506860539506" duration="48000" />
-      <workItem from="1506860608864" duration="1800000" />
-      <workItem from="1507031682047" duration="7081000" />
-      <workItem from="1507086581114" duration="10204000" />
-      <workItem from="1507098153545" duration="14536000" />
-      <workItem from="1507135041147" duration="370000" />
-      <workItem from="1507174821905" duration="1147000" />
-=======
-      <workItem from="1507467708793" duration="606000" />
->>>>>>> Stashed changes
+      <updated>1507812832130</updated>
+      <workItem from="1507812833830" duration="4917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="88500000" />
+    <option name="totallyTimeSpent" value="4917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22496831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-    <option name="totallyTimeSpent" value="53920000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08324552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> Stashed changes
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1264489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282123" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587412" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45734265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282123" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13371356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3902098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -595,275 +255,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/index.html" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/js/script.js" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/index.html" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" />
-    <entry file="file://$PROJECT_DIR$/html/month.html">
+    <entry file="file://$PROJECT_DIR$/js/schedule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/schedule.js" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/js/script.js" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/index.html" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" />
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-3.3.7/README.md" />
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-3.3.7/package.json" />
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-3.3.7-dist/js/npm.js" />
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日历插件/schedule/schedule.js" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/index.html" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/日程表样式/js/script.js" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/Bootstrap3Nav/index.html" />
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6923">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/week.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/week.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/index.html" />
-    <entry file="file://$PROJECT_DIR$/reference/jquery插件/jquery-nanoScroller20160121/content.html" />
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/month.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problems.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="56">
-            <caret line="0" column="204" lean-forward="false" selection-start-line="0" selection-start-column="204" selection-end-line="0" selection-end-column="204" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/plugin/toggle-button(free)/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lc_switch.min.js" />
-    <entry file="file://$PROJECT_DIR$/css/lc_switch.css" />
-    <entry file="file://$PROJECT_DIR$/reference/plugin/toggle-button(free)/README_by_myself.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-switch.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="614">
+          <caret line="150" column="61" lean-forward="false" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/schedule.css">
+    <entry file="file://$PROJECT_DIR$/css/buttons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="146" column="1" lean-forward="false" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-switch.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/plugin/bootstrap-switch/Bootstrap20160114/dist/js/bootstrap-switch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10332">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-switch.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-switch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/plugin/bootstrap-switch/Bootstrap20160114/docs/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/plugin/bootstrap-switch/Bootstrap20160114/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="235" column="20" lean-forward="true" selection-start-line="235" selection-start-column="20" selection-end-line="235" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/plugin/bootstrap-switch/Bootstrap20160114/docs/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jquery/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reference/plugin/bootstrap-switch/Bootstrap20160114/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="10" column="87" lean-forward="false" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+        <state relative-caret-position="63">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="469">
-          <caret line="288" column="11" lean-forward="false" selection-start-line="288" selection-start-column="11" selection-end-line="288" selection-end-column="34" />
+        <state relative-caret-position="609">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-=======
-        <state relative-caret-position="315">
-          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/schedule.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="189" column="19" lean-forward="false" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+        <state relative-caret-position="441">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/week.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2751">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
->>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
