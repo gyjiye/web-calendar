@@ -12,7 +12,7 @@ $ ->
   $("a[href*=\"#\"]").on "click", (event) ->
     event.preventDefault()
     $target = $($(this).attr("href").slice("#"))
-    $window.scrollTop $target.offset().top - sectionTop  if $target.length
+    $mywindow.scrollTop $target.offset().top - sectionTop  if $target.length
 
 
   # initialize all the inputs

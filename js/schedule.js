@@ -26,10 +26,11 @@ $(function() {
     //    init the bootstrapSwitch checkbox;
     $('input[name=my-checkbox]').bootstrapSwitch({});
     // add task button draggable
-    var $draggable = $('#add-task-button-draggable').draggabilly({containment: '.mypanel'});
+    // $('#add-task-button-draggable').draggabilly({containment: '.mypanel'});
 //     $('#add-task-button-draggable').udraggable({
 //         containment: '.mypanel'
 //     });
+    $('#add-task-button-draggable').drag({container:'.mypanel'});
 });
 
 
@@ -135,14 +136,14 @@ function move_away_despage() {
 (function () { $des_close.on('click', move_away_despage); })();
 
 // button to add task
-function add_task_button() {
-    console.log('catch click on button to add task.');
-}
-
-(function () {
-    var $add_task_button = $('#add-task-button-draggable');
-    $add_task_button.on('click', add_task_button);
-})();
+// function add_task_button() {
+//     console.log('catch click on button to add task.');
+// }
+//
+// (function () {
+//     var $add_task_button = $('#add-task-button-draggable');
+//     $add_task_button.on('click', add_task_button);
+// })();
 
 
 // ================ END add event to button ====================

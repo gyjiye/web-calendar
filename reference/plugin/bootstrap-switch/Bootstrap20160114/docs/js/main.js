@@ -5,7 +5,7 @@
 
   $(function() {
     var $createDestroy, $window, sectionTop;
-    $window = $(window);
+    $mywindow = $(window);
     sectionTop = $(".top").outerHeight() + 20;
     $createDestroy = $("#switch-create-destroy");
     hljs.initHighlightingOnLoad();
@@ -14,7 +14,7 @@
       event.preventDefault();
       $target = $($(this).attr("href").slice("#"));
       if ($target.length) {
-        return $window.scrollTop($target.offset().top - sectionTop);
+        return $mywindow.scrollTop($target.offset().top - sectionTop);
       }
     });
     $("input[type=\"checkbox\"], input[type=\"radio\"]").not("[data-switch-no-init]").bootstrapSwitch();
