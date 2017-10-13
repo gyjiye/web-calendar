@@ -14,14 +14,14 @@
     <!-- Bootstrap -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--bootstrap switch-->
-    <link rel="stylesheet" href="../css/bootstrap-switch.css">
+    <link rel="stylesheet" href="../css/plugin/bootstrap-switch.css">
     <!--my style-->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/schedule.css">
     <!-- the scroller plugin -->
-    <link rel="stylesheet" href="../css/nanoscroller.css">
+    <link rel="stylesheet" href="../css/plugin/nanoscroller.css">
     <!--the flexText plugin-->
-    <link rel="stylesheet" href="../css/flexText.css">
+    <link rel="stylesheet" href="../css/plugin/flexText.css">
     <!-- logo font -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
     <!-- calendar font -->
@@ -31,7 +31,7 @@
     <!--description font ====== roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i" rel="stylesheet">
     <!--buttons-->
-    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/plugin/buttons.css">
 </head>
 
 <body>
@@ -78,7 +78,7 @@
         <!-- TODO: 悬浮图标glyphicon glyphicon-pencil -->
         <div class="mypanel">
             <!--button to add task-->
-            <button class="button button-glow button-circle button-action button-jumbo add-task-button ">
+            <button class="button button-glow button-circle button-action button-jumbo add-task-button" id="add-task-button-draggable">
                 <span class="glyphicon glyphicon-plus"></span>
             </button>
             <!-- the greeting and preview area -->
@@ -275,22 +275,30 @@
 </div>
 
 </body>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../node_modules/jquery/dist/jquery.js"></script>
+<!--字由字体 汉仪旗黑-55S， 注意申请白名单-->
+<script type="text/javascript" src="http://hellofont.cn/resource/js/jquery.hywebfont.min.js"></script>
 <!-- bootstrap -->
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <!--bootstrap switch-->
-<script src="../js/bootstrap-switch.min.js"></script>
+<script src="../js/plugin/bootstrap-switch.min.js"></script>
 <!-- scroller js -->
-<script type="text/javascript" src="../js/jquery.nanoscroller.js"></script>
+<script type="text/javascript" src="../js/plugin/jquery.nanoscroller.js"></script>
 <!--flexText plugin js-->
-<script type="text/javascript" src="../js/jquery.flexText.min.js"></script>
-<!--字由字体 汉仪旗黑-55S， 注意申请白名单-->
-<script type="text/javascript" src="http://hellofont.cn/resource/js/jquery.hywebfont.min.js"></script>
+<script type="text/javascript" src="../js/plugin/jquery.flexText.min.js"></script>
 <!--plugin - store-->
 <script type="text/javascript" src="../node_modules/store/dist/store.modern.min.js"></script>
+<!--plugin - udraggable-->
+<!--<script type="text/javascript" src="../js/plugin/jquery.event.ue.js"></script>-->
+<!--<script type="text/javascript" src="../js/plugin/jquery.udraggable.js"></script>-->
+<!--plugin - draggabilly-->
+<!--<script type="text/javascript" src="../node_modules/draggabilly/dist/draggabilly.pkgd.min.js"></script>-->
 <!--my js-->
 <script type="text/javascript" src="../js/schedule.js"></script>
+<!--drag-->
+<script type="text/javascript" src="../js/drag.js"></script>
 </html>
 
 

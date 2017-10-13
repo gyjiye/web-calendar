@@ -1,6 +1,7 @@
 // ===============global variables=============================
 var size = 3,// window size with 3 for large, 2 for middle, 1 for small
     prior_size = 0, // screen size before, initial value 0 to check at beginning
+    // $mypanel = $('.mypanel'), // mypanel
     $summary = $('.summary'), // summary
     $things_list = $('.things-list'), // things list
     $description = $('.description'), // description
@@ -24,7 +25,15 @@ $(function() {
     $('textarea').flexText();
     //    init the bootstrapSwitch checkbox;
     $('input[name=my-checkbox]').bootstrapSwitch({});
+    // add task button draggable
+    var $draggable = $('#add-task-button-draggable').draggabilly({containment: '.mypanel'});
+//     $('#add-task-button-draggable').udraggable({
+//         containment: '.mypanel'
+//     });
 });
+
+
+
 // =============== END plugin init=============================
 
 // =============== media query =============================
@@ -124,6 +133,16 @@ function move_away_despage() {
 
 // des close
 (function () { $des_close.on('click', move_away_despage); })();
+
+// button to add task
+function add_task_button() {
+    console.log('catch click on button to add task.');
+}
+
+(function () {
+    var $add_task_button = $('#add-task-button-draggable');
+    $add_task_button.on('click', add_task_button);
+})();
 
 
 // ================ END add event to button ====================
