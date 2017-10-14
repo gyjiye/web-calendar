@@ -1,7 +1,6 @@
 // ===============global variables=============================
 var size = 3,// window size with 3 for large, 2 for middle, 1 for small
     prior_size = 0, // screen size before, initial value 0 to check at beginning
-    // $mypanel = $('.mypanel'), // mypanel
     $summary = $('.summary'), // summary
     $things_list = $('.things-list'), // things list
     $description = $('.description'), // description
@@ -32,9 +31,6 @@ $(function() {
 //     });
     $('#add-task-button-draggable').drag({container:'.mypanel'});
 });
-
-
-
 // =============== END plugin init=============================
 
 // =============== media query =============================
