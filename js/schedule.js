@@ -92,6 +92,10 @@ $(window).resize(function () {
         }
     }
 });
+
+// check size once page opened
+$(window).resize();
+
 // =============== END media query =============================
 
 
@@ -135,7 +139,7 @@ function move_away_despage() {
 // function add_task_button() {
 //     console.log('catch click on button to add task.');
 // }
-//
+// //
 // (function () {
 //     var $add_task_button = $('#add-task-button-draggable');
 //     $add_task_button.on('click', add_task_button);

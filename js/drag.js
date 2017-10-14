@@ -1,45 +1,120 @@
+// @param -- optional
+// container [string]
+// click_function [function]
+// touch_function [function]
+
     // where the target element moves
     // default window
-var $container = 0,
+var $container = undefined,
     // target element to drag
-    $target = 0,
+    $target = undefined,
     // boolean, user input container
-    have_user_container = false;
+    have_user_container = false,
+    // click_function
+    click_function = undefined,
+    // touch_function
+    touch_function = undefined;
 
 $.fn.drag = function (options) {
-    console.log("the plugin was found");
+    // console.log("the plugin was found");
     // 获取窗口
     var $mywindow = $(window);
     // 设定默认值
-    $.fn.drag.defaults = { container: $mywindow };
+    $.fn.drag.defaults = {
+        container: $mywindow ,
+        click_function : function () {
+            console.log("catch click.");
+        },
+        touch_function : function () {
+            console.log("catch click.");
+        }
+    };
     // 合并默认值和用户设定值:
     var opt = $.extend({}, $.fn.drag.defaults, options);
     // 获取container
-    // 用户有输入值
     if (options && options.container) {
+        // 用户有输入值
         // the container string - optional
-        var container = opt.container;
-        $container = $(container);
+        // var container_str = opt.container;
+        // $container = $(container_str);
+        $container = $(opt.container);
         have_user_container = true;
     } else {
-        $container = $mywindow;
+        $container = opt.container;
     }
     // 获取target
     $target = this;
-    // add eventlisterer for mousedown
     console.log("$target: ", $target);
     console.log("$container: ", $container);
+    // 获取click_function
+    click_function = opt.click_function;
+    // 获取touch_function
+    touch_function = opt.touch_function;
 
-    $target.mousedown(fnDown);
+    // 是否捕捉到长按
+    var get_longpress = false;
+    // 延时标识
+    var timeout = 0;
+    // check device_type, if it is pc(or mobile)
+    if(device_type_pc()) {
+    // pc
+        // 定时
+        $target.mousedown(function (event) {
+            timeout = setTimeout(function () {
+                get_longpress = true;
+                console.log('get_longpress: ', get_longpress);
+                fnDown(event);
+            }, 120);
+        });
+        // 解除定时
+        $target.mouseup(function () {
 
-    $target.mouseup(fnUp);
+            if (get_longpress) {// 长按
+                fnUp();
+            } else {// click
+                clearTimeout(timeout);
+                click_function();
+            }
+            get_longpress = false;
+        });
 
+    } else {
+    // mobile
+        // 获取target
+        target = $target.get(0);
+        // 是否捕捉到长按
+        get_longpress = false;
+        // 延时标识
+        timeout = 0;
+        // 定时
+        target.addEventListener('touchstart', function () {
+            timeout = setTimeout(function () {
+                get_longpress = true;
+                console.log('get_longpress: ', get_longpress);
+                handleMove();
+            }, 2000);
+        }, false);
+        // 解除定时
+        target.addEventListener('touchend', function () {
+            if (get_longpress) {
+                handleEnd();
+            } else {
+                clearTimeout(timeout);
+                touch_function();
+            }
+            get_longpress = false;
+        }, false);
+
+
+    }
+    // $target.mousedown(fnDown);
+    // $target.mouseup(fnUp);
 
     return this;
 };
 
 function fnDown(event) {
-    console.log("work with mousedown-head");
+    event.preventDefault();
     // 光标按下时光标和target边缘之间的距离
     // 注意 offset 是否 需要块级元素
     var target_offset = $target.offset(),
@@ -53,18 +128,20 @@ function fnDown(event) {
         x : disX,
         y : disY
     };
-    // $target.mousemove(dis, function(event) {
+
+
+    // 检测在container内移动，并反应到target上，
+    // 注意不是检测target内运动，容易出界后失效
     $container.mousemove(dis, function(event) {
         fnMove(event, event.data.x, event.data.y);
     });
 
-    // 释放鼠标
-    // $target.off('mousedown', fnDown);
-    // $target.off('mousemove', fnMove);
+
 }
 
 function fnMove(event, target_posX, target_posY) {
-    console.log("work with mousemove-head");
+    event.preventDefault();
+    // console.log("work with mousemove-head");
     // target 边缘距离视窗边界距离
     // 光标到窗口距离 - target到窗口的距离
     var target_left_coor = event.pageX - target_posX,
@@ -119,14 +196,49 @@ function fnMove(event, target_posX, target_posY) {
     //移动traget
     $target.offset({left:target_left_coor, top: target_top_coor});
 
-
 }
 
 // 释放鼠标
 function fnUp() {
-    console.log('mouseup start!!!');
+    // console.log('mouseup start!!!');
     // $target.off('mousedown', fnDown);
     // $target.off('mouseup', fnUp);
     $container.off('mousemove');
+}
 
+// check device_type, if it is pc(or mobile)
+function device_type_pc() {
+    var browser={
+        versions:function(){
+            var u = navigator.userAgent;
+                // app = navigator.appVersion;
+            return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+        }(),
+        language:(navigator.browserLanguage || navigator.language).toLowerCase()
+    };
+
+    if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||
+        browser.versions.iPhone || browser.versions.iPad){
+        // console.log('mobile');
+        return false;
+    }else{
+        console.log('pc');
+        return true;
+    }
+}
+
+function handleMove(event) {
+    // 获取接触点
+    var touch = event.changedTouches[i];
 }
