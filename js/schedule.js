@@ -12,7 +12,8 @@ var size = 3,// window size with 3 for large, 2 for middle, 1 for small
     $summary_task = $('#tasks'), // task part on summary panel
     $things_list_close = $('#things-list-close'), // close button in things list part
     $greet_content = $('#greet-content'), // greet content on summary part, click to call sidebar
-    $mask = $('.mask'); // mask
+    $mask = $('.mask'), // mask
+    $add_task_button = $('.add-task-button'); // circle add task button
 
 
 
@@ -33,7 +34,10 @@ $(function() {
 //     $('#add-task-button-draggable').udraggable({
 //         containment: '.mypanel'
 //     });
-    $('#add-task-button-draggable').drag({container:'.mypanel'});
+    $('#add-task-button-draggable').drag({
+        container:'.mypanel',
+        click_function: move_to_despage
+    });
 });
 // =============== END plugin init=============================
 
@@ -111,15 +115,17 @@ $(window).resize();
 
 
 // ================ add event to button ====================
+
 // share
+function move_to_sharepage() {
+    if(!$part_share.hasClass('part-share-show')){
+        $part_share.addClass('part-share-show');
+    }
+    else { console.log('part-share already have class part-share-show') }
+}
+
 (function () {
    var share = $('#share-button');
-    function move_to_sharepage() {
-        if(!$part_share.hasClass('part-share-show')){
-            $part_share.addClass('part-share-show');
-        }
-        else { console.log('part-share already have class part-share-show') }
-    }
    share.on('click', move_to_sharepage);
 })();
 
@@ -138,12 +144,12 @@ function move_away_sharepage() {
     share_close.on('click', move_away_sharepage);
 })();
 
+// des close
 function move_away_despage() {
     $description.hide();
     $things_list.show();
 }
 
-// des close
 (function () { $des_close.on('click', move_away_despage); })();
 
 // button to add task
@@ -165,8 +171,10 @@ function move_away_things_list() {
 
 // call sidebar
 function sidebar_show() {
-    $mask.show();
-    $sidebar.addClass('sidebar-show');
+    if($sidebar.css('left')==='-220px') {
+        $mask.show();
+        $sidebar.addClass('sidebar-show');
+    }
 }
 (function () { $greet_content.on('click', sidebar_show); })();
 
@@ -177,23 +185,33 @@ function sidebar_hide() {
 }
 (function () { $mask.on('click', sidebar_hide); })();
 
+// add task button
+function add_task_button() {
+    move_to_sharepage();
+    // clear the content of descript page
+}
+// call the function in drag.js
+
+
 // ================ END add event to button ====================
 
 // ================ call in main parts====================
 
 
 // click task-item to call description on middle size windows
-(function () {
-    function move_to_despage() {
-        if(size < 3) {
-            // only works on middle and small screen
-            // console.log("click");
-            $things_list.hide();
-            $description.show();
-            // console.log('test - click task-item to call description');
+function move_to_despage() {
+    if(size < 3) {
+        // only works on middle and small screen
+        // console.log("click");
+        if (size===1) {
+            $summary.hide();
         }
+        $things_list.hide();
+        $description.show();
+        // console.log('test - click task-item to call description');
     }
-
+}
+(function () {
     $things_list_task_item.on('click', move_to_despage);
 })();
 

@@ -189,8 +189,8 @@ function fnMove(event, target_posX, target_posY) {
     // top
     if (target_top_coor < container_posY) {
         target_top_coor = container_posY;
-    } else if (target_top_coor > maxH) {
-        target_top_coor = maxH;
+    } else if (target_top_coor > maxH-5) {
+        target_top_coor = maxH-5;
     }
 
     //移动traget
