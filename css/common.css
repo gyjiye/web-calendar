@@ -32,11 +32,31 @@ body{
     margin: 0;
     padding: 0;
     left: -220px;
-    /*or*/
-    /*left: 0;*/
     position: absolute;
     background-color: rgba(0, 9, 9, 0.68);
     font-family: 'Quicksand', sans-serif;
+    /*!*transition*!*/
+    /*-webkit-transition: transform 1s;*/
+    /*-moz-transition: transform 1s;*/
+    /*-ms-transition: transform 1s;*/
+    /*-o-transition: transform 1s;*/
+    /*transition: transform 1s;*/
+    /*!*transform*!*/
+    /*-webkit-transform: translate(0,0);*/
+    /*-moz-transform: translate(0,0);*/
+    /*-ms-transform: translate(0,0);*/
+    /*-o-transform: translate(0,0);*/
+    /*transform: translate(0,0);*/
+    z-index: 115;
+}
+
+.sidebar-show{
+    /*-webkit-transform: translate(200px, 0px);*/
+    /*-moz-transform: translate(200px, 0px);*/
+    /*-ms-transform: translate(200px, 0px);*/
+    /*-o-transform: translate(200px, 0px);*/
+    /*transform: translate(200px, 0px);*/
+    left: 0px;
 }
 
 #nav-list li{

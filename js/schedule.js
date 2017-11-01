@@ -1,14 +1,18 @@
 // ===============global variables=============================
 var size = 3,// window size with 3 for large, 2 for middle, 1 for small
     prior_size = 0, // screen size before, initial value 0 to check at beginning
+    $sidebar = $('.sidebar'), // sidebar
     $summary = $('.summary'), // summary
     $things_list = $('.things-list'), // things list
     $description = $('.description'), // description
     $part_share = $('.part-share'), //description part-share
     $des_close = $('.part-des .close'), // description des-part close
     $things_list_task_item = $('.task-item'), // things-list task-list
-    $task_item_container = $('.things-list .nano-content'); // container of task-items
-
+    $task_item_container = $('.things-list .nano-content'), // container of task-items
+    $summary_task = $('#tasks'), // task part on summary panel
+    $things_list_close = $('#things-list-close'), // close button in things list part
+    $greet_content = $('#greet-content'), // greet content on summary part, click to call sidebar
+    $mask = $('.mask'); // mask
 
 
 
@@ -47,6 +51,7 @@ function page_init_large() {
 }
 
 function page_init_middle() {
+    $summary.show();
     $things_list.show();
     $description.css('display', 'none');
     $summary.css({'width':'35%', 'min-width':'300px'});
@@ -54,12 +59,18 @@ function page_init_middle() {
     $things_list.css('width', '65%');
     $description.css('width', '65%');
     $des_close.show();
+    $things_list_close.hide();
     // console.log('test - page_init_middle');
 }
 
 function page_init_small() {
     $summary.css('width', '100%');
+    $things_list.css('width', '100%');
+    $description.css('width', '100%');
+    $des_close.show();
+    $things_list_close.show();
     $things_list.hide();
+    $description.hide();
 }
 
 $(window).resize(function () {
@@ -145,6 +156,26 @@ function move_away_despage() {
 //     $add_task_button.on('click', add_task_button);
 // })();
 
+// things-list close
+function move_away_things_list() {
+    $things_list.hide();
+    $summary.show();
+}
+(function () { $things_list_close.on('click', move_away_things_list); })();
+
+// call sidebar
+function sidebar_show() {
+    $mask.show();
+    $sidebar.addClass('sidebar-show');
+}
+(function () { $greet_content.on('click', sidebar_show); })();
+
+// hide sidebar
+function sidebar_hide() {
+    $mask.hide();
+    $sidebar.removeClass('sidebar-show');
+}
+(function () { $mask.on('click', sidebar_hide); })();
 
 // ================ END add event to button ====================
 
@@ -164,6 +195,19 @@ function move_away_despage() {
     }
 
     $things_list_task_item.on('click', move_to_despage);
+})();
+
+// call things-list on small size page
+
+(function () {
+    function small_call_things_list(){
+        if(size < 2) {
+            $summary.hide();
+            $things_list.show();
+        }
+    };
+
+    $summary_task.on('click', small_call_things_list);
 })();
 
 // ================ END call in main parts====================

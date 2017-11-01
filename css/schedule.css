@@ -6,6 +6,16 @@ body, html, .content, .contain{
     /*position: relative;*/
 }
 
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 110;
+    background-color: #000;
+    opacity: 0.4;
+    display: none;
+}
+
 
 /*-----------------------------------------------------------*/
 /*---------------------- panel - place to show -------------------------*/
@@ -56,17 +66,24 @@ body, html, .content, .contain{
 }
 
 /*------------- the greeting and preview area-------------*/
-.button-drawer{
-    width: 100%;
-    height: 50px;
-    display: none;
-}
+/*.button-drawer{*/
+    /*width: 100%;*/
+    /*height: 50px;*/
+/*}*/
+
+/*#id-button-drawer{*/
+    /*font-size: 2.6em;*/
+    /*color: #FFFFFF;*/
+    /*margin-left: 10px;*/
+    /*margin-top: 5px;*/
+/*}*/
+
 
 #greet-content{
     font-family: 'Oxygen', sans-serif;
     font-size: 2em;
     color: rgb(240, 247, 247);
-    margin-top: 20px;
+    padding-top: 20px;
     padding-left: 12px;
 }
 
@@ -103,6 +120,8 @@ body, html, .content, .contain{
     font-weight: lighter;
     }
 
+#greet-content:hover,
+#greet-content:focus,
 #tasks:hover,
 #tasks:focus,
 #notifications:hover,
@@ -116,6 +135,11 @@ body, html, .content, .contain{
 
 
 /*-------------------- things to list --------------*/
+
+#things-list-close{
+    color: #FFFFFF;
+    margin-right:5px;
+}
 
 .task-item{
     padding: 15px;
@@ -156,6 +180,8 @@ body, html, .content, .contain{
     visibility: hidden;
 }
 .nano > .nano-pane > .nano-slider { background: #111; }
+
+
 /*--------------------- END scroll bar --------------------------*/
 
 /*-------------------- END things to list --------------*/
@@ -351,17 +377,15 @@ body, html, .content, .contain{
     /*}*/
 /*}*/
 
-/*------------ hide the things-list -------------*/
+/*------------ small size -------------*/
 /*width<=649px*/
-/*finish in js part*/
-/*@media screen and (max-width: 649px) {*/
-    /*.summary{*/
-        /*width: 100%;*/
-    /*}*/
-    /*.things-list{*/
-        /*display: none;*/
-    /*}*/
-/*}*/
+@media screen and (max-width: 649px) {
+    .mypanel > .things-list > .nano-content{
+        height: calc(100% - 51px);
+        top: 51px;
+    }
+
+}
 
 
 /*-------------- set the min-width of page ----------*/
