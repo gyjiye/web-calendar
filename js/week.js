@@ -27,3 +27,12 @@ function sidebar_hide() {
 // ================ END add event to button ====================
 
 
+// ================ render the content ==========================
+
+update_time_title(MONTH, DATE);
+console.log($date);
+
+
+// ================ END render the content ==========================
+
+

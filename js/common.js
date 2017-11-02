@@ -5,19 +5,20 @@ var now = new Date(),
     DATE = now.getDate(), // 日期
     DAY = now.getDay(); // 星期几
 
+var $date = $('#data');
+
 // =============== END global variables=============================
 
 // update time title
-function update_time_title() {
+function update_time_title(m, d) {
+    console.log('update time title');
     var month_str = ['January', 'February', 'March', 'April','May','June','July','August','September','October','November','December'];
-    var $date = $('#data');
     if($date !== undefined) {
-        var date_content = month_str[MONTH-1] + ' ' + DATE;
+        var date_content = month_str[m-1] + ' ' + d;
     }
     $date.text(date_content);
 }
 
-update_time_title();
 
 // 计算明天日期
 function tomorrow_date (y,m,d){ //参数里的月份需要是自然月。也就是说月份+1这步在传参前就设置好

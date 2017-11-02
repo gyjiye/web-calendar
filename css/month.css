@@ -3,8 +3,6 @@
 /*------------------ Content ----------------*/
 /*-------------------------------------------*/
 
-
-
 .table-head{
     width: 14%;
     color: rgba(19, 18, 19, 1);
@@ -31,6 +29,16 @@ div.table-item-date{
     padding-right: 5px;
 }
 
+.now-table-item{
+    background-color: rgb(240, 248, 255);
+    border-color: rgb(203, 226, 249);
+}
+
+.now-first-div{
+    background-color: rgb(14, 134, 254);
+    color: #ffffff;
+}
+
 /*----------------------------------------*/
 /*------------------ Responsive ----------------*/
 /*-------------------------------------------*/
@@ -52,6 +60,6 @@ div.table-item-date{
 
 @media screen and (min-width: 1280px){
     table tr td.table-item{
-        height: 120px;
+        height: 100px;
     }
 }
