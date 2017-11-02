@@ -61,6 +61,11 @@
     /*line-height: 50px;*/
 }
 
+.now-date-item{
+    background-color: #74C5DE;
+    border-color: rgb(203, 226, 249);
+}
+
 #table-head-start{
     width: 50px;
     /*max-width: 50px;*/
