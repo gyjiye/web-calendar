@@ -14,12 +14,11 @@ var size = 3,// window size with 3 for large, 2 for middle, 1 for small
     $greet_content = $('#greet-content'), // greet content on summary part, click to call sidebar
     $mask = $('.mask'), // mask
     $add_task_button = $('.add-task-button'), // circle add task button
-    $share_va = $('#delete'), // delete button in des part
-    $share_submit = $('#submit-button'), // submint button in des part
-    $submit_button = $('#submit'), // submint button in des part
-    $delete = $('#delete-button'), // delete button in des part
-    $share_list = $('.list-group'); // the list of share target
-
+    $share_button = $('#share-button'), // share button in des part
+    $submit_button = $('#submit-button'), // submint button in des part
+    $delete_button = $('#delete-button'), // delete button in des part
+    $share_list = $('.list-group'), // the list of share target
+    $share_items = $('.share-item'); // the item in share list
 
 
 
@@ -188,6 +187,7 @@ function move_away_despage() {
     $description.hide();
     $things_list.show();
     $add_task_button.show();
+    $share_button.data("task_id", "");
 }
 
 (function () { $des_close.on('click', move_away_despage); })();
@@ -232,6 +232,24 @@ function add_task_button() {
 }
 // call the function in drag.js
 
+// add the trainsition effect to share item
+// to distinguish is it is selected
+// TODO: something crash, can't catch the click,
+// it seems that the bind fails after refreshing the DOM
+function share_item_checked() {
+    console.log('catch click on share item.');
+    var $this = $(this);
+    if ($this.prop('checked')) {
+        // selected,drop
+        $this.removeClass('share-item active');
+    } else {
+        $this.addClass('share-item active');
+    }
+}
+
+(function () {
+    $share_items.on('click', share_item_checked);
+})();
 
 // ================ END add event to button ====================
 
@@ -240,6 +258,7 @@ function add_task_button() {
 
 // click task-item to call description on middle size windows
 function move_to_despage() {
+    // console.log('catch click on task item');
     var $this = $(this);
 
     if(size < 3) {
@@ -253,9 +272,13 @@ function move_to_despage() {
         // console.log('test - click task-item to call description');
     }
     // click task items to render the content in description part
-    console.log('$this.data("task_id"): ', $this.data("task_id"));
+    // console.log('$this.data("task_id"): ', $this.data("task_id"));
     if ($this.data("task_id")===undefined) {
+        // come from add task button
         render_description('t001');
+        var now = new Date();
+        var now_timestamp = now.getTime();
+        $share_button.data("task_id", now_timestamp);
     } else {
         render_description($this.data("task_id"));
     }
@@ -265,11 +288,14 @@ function test() {
     console.log('catch click on task item.');
 }
 
-$(function () {
-    (function () {
-        $things_list_task_item.on('click', move_to_despage);
-    })();
-});
+
+(function () {
+    $things_list_task_item = $('.task-item');
+    // console.log('$things_list_task_item: ', $things_list_task_item);
+    $things_list_task_item.on('click', move_to_despage);
+    // $things_list_task_item.on('click', test);
+})();
+
 
 
 // call things-list on small size page
@@ -279,6 +305,7 @@ $(function () {
         if(size < 2) {
             $summary.hide();
             $things_list.show();
+            render_things_list();
         }
     };
 
@@ -301,7 +328,7 @@ var task_template = {
     start_time: ' ',
     end_time: ' ',
     reminder_time: ' ',
-    share_people: [], // user id
+    share_people: ['u001'], // user id
     email_remind: true,
     message_remind: false
 }
@@ -318,7 +345,7 @@ var friend_template = {
 var task_index = ['t001'];
 // list of friends(user_id)
 // use 'friend_index' as index
-var friend_index = ['u001'];
+var friend_index = ['u001', 'u002'];
 // ================ END localstorage ====================
 
 
@@ -339,13 +366,18 @@ var task1 = {
 var friend1 = {
     user_id: 'u001',
     user_name: 'hu'
-}
+};
+var friend2 = {
+    user_id: 'u002',
+    user_name: 'hu2'
+};
 
 // get the final data
 var task_insert = $.extend({}, task_template, task1);
 
 store.set(task_insert.task_id, task_insert);
 store.set('u001', friend1);
+store.set('u002', friend2);
 store.set('task_index', task_index);
 store.set('friend_index', friend_index);
 
@@ -377,6 +409,8 @@ function render_things_list() {
     }
     // reload the variable after changing the DOM
     $things_list_task_item = $('.task-item');
+    $things_list_task_item.on('click', move_to_despage);
+
 }
 
 // test
@@ -411,12 +445,43 @@ function render_description(task_id) {
     $('#id-des-item-time-end').attr("placeholder", tran_time(item.end_time));
     $('#id-des-item-reminder').attr("placeholder", tran_time(item.reminder_time));
     $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
+    $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
     $('#id-des-item-content').text(item.content);
+    $share_button.data("task_id", task_id);
+    render_share();
 }
 
-// render the share part
-function render_share(task_id) {
+// render one friend
+function render_one_friend(user_id) {
+    var this_share_list = store.get('friend_index');
+    // var this_share_list = store.get($share_button.data("task_id")).share_people;
+    var check_judge = "";
+    for (i=0;i<this_share_list.length;i++) {
+        if (user_id == this_share_list[i]){
+            check_judge = "checked";
+            break;
+        }
+    }
 
+    var template = '<li class="checkbox list-group-item share-item">'
+        + '<label>'
+        + '<input type="checkbox"  name="share-item-checkbox" data-user_id="' + user_id + '"' + check_judge + '>'
+        + store.get(user_id).user_name
+        + '</label>'
+        + '</li>';
+    console.log(template);
+    return $(template);
+}
+// render the share part with all friends
+function render_share() {
+    $share_list.html('');
+    var temp_friend_index = store.get('friend_index');
+    for (i=0; i<temp_friend_index.length; i++) {
+        var $item = render_one_friend(temp_friend_index[i]);
+        $share_list.prepend($item);
+    }
+    // reload the variable after changing the DOM
+    $share_items = $('.share-item');
 }
 
 
@@ -425,6 +490,90 @@ function render_share(task_id) {
 
 
 // ================ add and delete task====================
+
+// transform time from str(e.g. 2017-11-3 23:07) to timestamp
+function tran_time_to_stamp(string) {
+    var y = string.slice(0, 4),
+        m = string.slice(5, 7),
+        d = string.slice(8, 10),
+        h = string.slice(11, 13),
+        min = string.slice(14);
+    var time = new Date();
+    time.setFullYear(y);
+    time.setMonth(m);
+    time.setDate(d);
+    time.setHours(h);
+    time.setMinutes(min);
+    return time.getTime();
+}
+// add or change a task
+// save the date through submit button
+function save_task() {
+    var task = {};
+    task.task_id = $share_button.data("task_id");
+    task.name = $('#id-des-item-name').val();
+    task.start_time = tran_time_to_stamp($('#id-des-item-time-start').val());
+    task.end_time = tran_time_to_stamp($('#id-des-item-time-end').val());
+    task.reminder_time = tran_time_to_stamp($('#id-des-item-reminder').val());
+    task.message_remind = $('#des-item-reminder-message').bootstrapSwitch('state');
+    task.email_remind = $('#des-item-reminder-email').bootstrapSwitch('state');
+    task.content = $('#id-des-item-content').text();
+
+    var now = new Date();
+    var now_stamp = now.getTime();
+    (task.start_time<0) ?  task.start_time=now_stamp : pass;
+    (task.end_time<0) ?  task.end_time=now_stamp+60*60*1000 : pass;
+    (task.reminder_time<0) ?  task.reminder_time=now_stamp : pass;
+
+    // get the share target
+    var share_people = [];
+    for(i=0; i<$share_items.length; i++) {
+        if ($($share_items[i]).find("input").prop('checked')) {
+            // checked
+            share_people.push($($share_items[i]).find("input").data("user_id"));
+        }
+    }
+    task.share_people = share_people;
+    console.log('share_people: ', share_people);
+    console.log('task: ', task);
+
+    var temp_task_index = store.get('task_index');
+    // 去重
+    function getArray(a) {
+        var hash = {},
+            len = a.length,
+            result = [];
+
+        for (var i = 0; i < len; i++){
+            if (!hash[a[i]]){
+                hash[a[i]] = true;
+                result.push(a[i]);
+            }
+        }
+        return result;
+    }
+
+    temp_task_index.push(task.task_id);
+    temp_task_index = getArray(temp_task_index);
+    store.set('task_index', temp_task_index);
+    store.remove($share_button.data("task_id"));
+    store.set(task.task_id, task);
+
+
+    // back to things list
+    render_things_list();
+    move_away_despage();
+}
+
+(function () {
+    $submit_button.on('click', save_task);
+})();
+
+// delete task when click delete button ib part description
+function delete_task() {
+
+}
+
 
 // ================ END add and delete task====================
 

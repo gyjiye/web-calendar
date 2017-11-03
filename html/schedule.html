@@ -194,7 +194,7 @@
 
                         <!--choice part, choice to delete, save, remind or share-->
                         <div class="choice">
-                                <button type="button" class="btn btn-info" id="share-button"><span class="glyphicon glyphicon-share-alt"></span> Share</button>
+                                <button type="button" class="btn btn-info" id="share-button"><span class="glyphicon glyphicon-share-alt" data-task_id=""></span> Share</button>
                                 <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
                                 <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
                         </div>
@@ -207,13 +207,14 @@
                             <div class="des-head">Share</div>
                             <button type="button" class="close" aria-label="Close" id="share-close"><span aria-hidden="true">&times;</span></button>
                         </div>
+                        <!--TODO: add the 'share or not' button-->
                         <!--master switch to share-->
-                        <div class="master-switch-share-outer">
-                            <label for="master-switch-share">
-                                <input type="checkbox" name="my-checkbox" id="master-switch-share" checked>
-                                <span>share or not</span>
-                            </label>
-                        </div>
+                        <!--<div class="master-switch-share-outer">-->
+                            <!--<label for="master-switch-share">-->
+                                <!--<input type="checkbox" name="my-checkbox" id="master-switch-share" checked>-->
+                                <!--<span>share or not</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
                         <!--share item list-->
                         <ul class="list-group">
                             <li class="checkbox list-group-item share-item active">
@@ -254,10 +255,11 @@
                             </li>
                         </ul>
                         <!--choice to submit or abandon-->
-                        <div class="share-choice">
-                                <button type="button" class="btn btn-danger" id="share-cancel"> Cancel </button>
-                                <button type="button" class="btn btn-primary" id="share-submit" > Submit </button>
-                        </div>
+                        <!--TODO: add the share and cancle button-->
+                        <!--<div class="share-choice">-->
+                                <!--<button type="button" class="btn btn-danger" id="share-cancel"> Cancel </button>-->
+                                <!--<button type="button" class="btn btn-primary" id="share-submit" > Share </button>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
