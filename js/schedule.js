@@ -14,8 +14,12 @@ var size = 3,// window size with 3 for large, 2 for middle, 1 for small
     $greet_content = $('#greet-content'), // greet content on summary part, click to call sidebar
     $mask = $('.mask'), // mask
     $add_task_button = $('.add-task-button'), // circle add task button
-    $submit_button = $('#submit-button'), // submint button in des part
-    $delete_button = $('#delete-button'); // delete button in des part
+    $share_va = $('#delete'), // delete button in des part
+    $share_submit = $('#submit-button'), // submint button in des part
+    $submit_button = $('#submit'), // submint button in des part
+    $delete = $('#delete-button'), // delete button in des part
+    $share_list = $('.list-group'); // the list of share target
+
 
 
 
@@ -23,6 +27,37 @@ var size = 3,// window size with 3 for large, 2 for middle, 1 for small
 
 
 // =============== plugin init=============================
+// init the date input plugin
+function init_date_plugin() {
+    var curr = new Date().getFullYear();
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.datetime = {preset : 'datetime'};
+    opt.time = {preset : 'time'};
+
+    opt.default = {
+        theme: 'android-holo light', //皮肤样式
+        display: 'modal', //显示方式
+        mode: 'scroller', //日期选择模式
+        dateFormat: 'yyyy-mm-dd',
+        lang: 'zh',
+        showNow: true,
+        nowText: "今天",
+        stepMinute: 5,
+        startYear: curr - 0, //开始年份
+        endYear: curr + 4 //结束年份
+    };
+    $('.settings').bind('change', function() {
+        var demo = 'datetime';
+        if (!demo.match(/select/i)) {
+            $('.demo-test-' + demo).val('');
+        }
+        $('.demo-test-' + demo).scroller('destroy').scroller($.extend(opt['datetime'], opt['default']));
+        $('.demo').hide();
+        $('.demo-' + demo).show();
+    });
+    $('#demo').trigger('change');
+}
 // ready event
 $(function() {
     //    init the scroller
@@ -40,7 +75,8 @@ $(function() {
         container:'.mypanel',
         click_function: move_to_despage
     });
-    // $('.demo-test-datetime').scroller('destroy').scroller($.extend(opt['datetime'], opt['default']));
+    init_date_plugin();
+
 });
 // =============== END plugin init=============================
 
@@ -295,7 +331,7 @@ var task1 = {
     start_time: now_timestamp,
     end_time: now_timestamp+60*60*1000,
     reminder_time: now_timestamp,
-    share_people: [], // user id
+    share_people: ['u001'], // user id
     email_remind: true,
     message_remind: false
 }
@@ -361,20 +397,30 @@ function tran_time(timestamp) {
 }
 // render the description
 function render_description(task_id) {
+    // console.log('catch render descript')
     var item = store.get(task_id);
-    console.log('task_id: ', task_id);
-    console.log('item: ', item);
+    // console.log('task_id: ', task_id);
+    // console.log('item: ', item);
+    // clear the val created by date input plugin when leave descript
+    $('#id-des-item-time-start').val(undefined);
+    $('#id-des-item-time-end').val(undefined);
+    $('#id-des-item-reminder').val(undefined);
     $('#id-des-item-name').attr("value", item.name);
-    $('#id-des-item-time-start').attr("value", tran_time(item.start_time));
-     $('#id-des-item-time-end').attr("value", tran_time(item.end_time));
-    $('#id-des-item-reminder').attr("value", tran_time(item.reminder_time));
-    $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
+    // change the placeholder
+    $('#id-des-item-time-start').attr("placeholder", tran_time(item.start_time));
+    $('#id-des-item-time-end').attr("placeholder", tran_time(item.end_time));
+    $('#id-des-item-reminder').attr("placeholder", tran_time(item.reminder_time));
     $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
     $('#id-des-item-content').text(item.content);
 }
 
+// render the share part
+function render_share(task_id) {
 
-// $('input[name="my-checkbox"]').bootstrapSwitch('state', true, true);
+}
+
+
+
 // ================ END render content====================
 
 

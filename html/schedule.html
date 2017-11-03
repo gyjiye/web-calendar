@@ -33,6 +33,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i" rel="stylesheet">
     <!--buttons-->
     <link rel="stylesheet" href="../css/buttons.css">
+    <!--mobiscroll-->
+    <link rel="stylesheet" href="../reference/plugin/jQuery-mobiscroll/style/mobiscroll.2.13.2.css">
 </head>
 
 <body>
@@ -146,15 +148,35 @@
                                 <label for="id-des-item-name">item</label>
                                 <input type="text" class="form-control" id="id-des-item-name" placeholder="年轻人少熬夜" webfont="true" fontid="832">
                             </div>
+
                             <div class="des-item-time">
+
                                 <label for="id-des-item-time-start">from</label>
-                                <div class="form-group demo-test-datetime" id="time-start-outer"><input type="text" class="form-control" id="id-des-item-time-start" placeholder="2017-10-4 23:00"></div>
+                                <div class="form-group" id="time-start-outer">
+                                    <div class="settings" style="display:none;">
+                                    <select name="demo"  id="demo">
+                                        <option value="date">日期</option>
+                                    </select>
+                                    </div>
+                                    <input type="text" class="form-control demo-test-date demo-test-datetime demo-test-time demo-test-credit" id="id-des-item-time-start" placeholder="2017-10-4 23:00" name="test">
+                                </div>
                                 <label for="id-des-item-time-end">to</label>
-                                <div class="form-group"><input type="text" class="form-control" id="id-des-item-time-end" placeholder="2017-10-4 23:01"></div>
+                                <div class="form-group">
+                                    <!--<div class="settings" style="display:none;">-->
+                                        <!--<select name="demo">-->
+                                            <!--<option value="date">日期</option>-->
+                                        <!--</select>-->
+                                    <!--</div>-->
+                                    <input type="text" class="form-control demo-test-date demo-test-datetime demo-test-time demo-test-credit" id="id-des-item-time-end" placeholder="2017-10-4 23:01"></div>
                             </div>
                             <div class="des-item-reminder">
                                 <label for="id-des-item-reminder">reminder</label>
-                                <input type="text" class="form-control" id="id-des-item-reminder" placeholder="2017-10-4 23:00">
+                                <!--<div class="settings" style="display:none;">-->
+                                    <!--<select name="demo">-->
+                                        <!--<option value="date">日期</option>-->
+                                    <!--</select>-->
+                                <!--</div>-->
+                                <input type="text" class="form-control demo-test-date demo-test-datetime demo-test-time demo-test-credit" id="id-des-item-reminder" placeholder="2017-10-4 23:00">
                                 <label>
                                     <input type="checkbox" name="my-checkbox" id="des-item-reminder-email" checked>
                                     <span>email&emsp;</span>

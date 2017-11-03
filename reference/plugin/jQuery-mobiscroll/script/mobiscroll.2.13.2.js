@@ -6,6 +6,10 @@
  * Licensed under the MIT license.
  *
  */
+
+// ==================================================================
+// 屏蔽弹窗 在line1673
+// ==================================================================
 (function ($, undefined) {
 
     function testProps(props) {
@@ -1665,7 +1669,8 @@
                         that.setValue($elm.val(), false);
                     }
                     that._preventChange = false;
-					alert($elm.val())
+                    // 屏蔽弹窗
+					// alert($elm.val())
                 });
             }
         };
