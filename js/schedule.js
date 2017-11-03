@@ -521,6 +521,9 @@ function save_task() {
 
     var now = new Date();
     var now_stamp = now.getTime();
+    function pass() {
+
+    }
     (task.start_time<0) ?  task.start_time=now_stamp : pass;
     (task.end_time<0) ?  task.end_time=now_stamp+60*60*1000 : pass;
     (task.reminder_time<0) ?  task.reminder_time=now_stamp : pass;
