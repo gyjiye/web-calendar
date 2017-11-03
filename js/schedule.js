@@ -338,24 +338,15 @@ function tran_time(timestamp) {
 }
 // render the description
 function render_description(task_id) {
-    // var item = store.get(task_id);
-    // $des_item_name = $('#id-des-item-name').attr("value", item.name);
-    // $des_item_time_start = $('#id-des-item-time-start').attr("value", tran_time(item.start_time));
-    // $des_item_time_end = $('#id-des-item-time-end').attr("value", tran_time(item.end_time));
-    // $des_item_reminder = $('#id-des-item-reminder').attr("value", tran_time(item.reminder_time));
-    // $des_item_reminder_email = $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
-    // $des_item_reminder_mesage = $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
-    // $des_item_content = $('#id-des-item-content').
-    //
+    var item = store.get(task_id);
+    $('#id-des-item-name').attr("value", item.name);
+    $('#id-des-item-time-start').attr("value", tran_time(item.start_time));
+     $('#id-des-item-time-end').attr("value", tran_time(item.end_time));
+    $('#id-des-item-reminder').attr("value", tran_time(item.reminder_time));
+    $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
+    $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
+    $('#id-des-item-content').text(item.content);
 
-    // write the content
-    // $des_item_name.
-    // $des_item_time_start.
-    // $des_item_time_end.
-    // $des_item_reminder.
-    // $des_item_reminder_email.
-    // $des_item_reminder_mesage.
-    // $des_item_content.
 }
 
 render_description('t001');
