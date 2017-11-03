@@ -118,10 +118,10 @@
                                 Sun
                                 <br>
                                 <span class="date show-optional">
-                                    <span class="date-item-month">10</span>
+                                    <span class="date-item-month" id='month_first'>10</span>
                                     <span>/</span>
                                 </span>
-                                    <span class="date-item-date">29</span>
+                                    <span class="date-item-date" id='date_first'>29</span>
                             </div>
                             <div class="date-item">
                                 Mon
@@ -240,7 +240,9 @@
 
                 <!--vertical line-->
                 <div class="vertical-line">
-                    <div class="vertical-line-item"></div>
+                    <div class="vertical-line-item">
+                        <div class="task">task1</div>
+                    </div>
                     <div class="vertical-line-item"></div>
                     <div class="vertical-line-item"></div>
                     <div class="vertical-line-item"></div>
@@ -261,6 +263,7 @@
     <script src="../node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../node_modules/store/dist/store.modern.min.js"></script>
     <!--my common js-->
     <script type="text/javascript" src="../js/common.js"></script>
     <!--my js-->

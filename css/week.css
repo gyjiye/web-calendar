@@ -147,6 +147,7 @@
     border-collapse: collapse;
     border-top: none;
     border-left: none;
+    position: relative;
 }
 
 
@@ -168,4 +169,13 @@
     .sidebar {
         height: 1340px;
     }
+}
+
+/*==============================================================*/
+.task{
+    border:1px black solid;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    top:30px;
 }

@@ -131,8 +131,46 @@ function move_back() {
 $date.on('click', move_back);
 
 
-
-
 // ================ END render the content ==========================
 
+function render() {
+    var month_first= $('#month_first'),
+        date_first=$('#date_first');
+    var sunday = new Date();
+    sunday.setMonth(month_first.text());
+    sunday.setDate(date_first.text());
+    sunday.setHours(0);
+    sunday.setMinutes(0);
+    var sunday_stamp = sunday.getTime();
+    var satday_stamp = sunday_stamp + 7*24*60*60*1000;
+
+    function draw_one_ask(task) {
+        console.log(task)
+        var date = new Date(task.start_time);
+        var day = date.getDay();
+        var $container = $($('.vertical-line-item')[day]);
+        var template = '<div class="task" id="'+task.task_id+'">'+task.name +'</div>';
+        $container.append($(template));
+        $task_block = $('#'+task.task_id);
+        $task_block.css('top', ((task.start_time-satday_stamp)/(24*60*60*1000)*100)+'%');
+    }
+
+//  parems: day(星期几）
+    function draw_days() {
+
+        var week_tasks = [];
+        task_index = store.get('task_index');
+        for (i=1; i<store.get('task_index').length; i++) {
+            var task = store.get(task_index[i]);
+            console.log(task)
+            if (task.start_time>sunday_stamp && task._end>satday_stamp) {
+                draw_one_task(task);
+            }
+        }
+    }
+
+    draw_days();
+}
+
+render();
 

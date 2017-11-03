@@ -375,11 +375,11 @@ var friend2 = {
 // get the final data
 var task_insert = $.extend({}, task_template, task1);
 
-store.set(task_insert.task_id, task_insert);
-store.set('u001', friend1);
-store.set('u002', friend2);
-store.set('task_index', task_index);
-store.set('friend_index', friend_index);
+// store.set(task_insert.task_id, task_insert);
+// store.set('u001', friend1);
+// store.set('u002', friend2);
+// store.set('task_index', task_index);
+// store.set('friend_index', friend_index);
 
 // ================ END test data ======================
 
@@ -469,7 +469,7 @@ function render_one_friend(user_id) {
         + store.get(user_id).user_name
         + '</label>'
         + '</li>';
-    console.log(template);
+    // console.log(template);
     return $(template);
 }
 // render the share part with all friends
@@ -579,7 +579,26 @@ function delete_task() {
 
 
 // ================ END add and delete task====================
+// delete task when click delete button ib part description
+function delete_task() {
+    var task_id = $share_button.data("task_id");
+    store.remove(task_id);
+    var temp_task_index = store.get('task_index');
+    var index = temp_task_index.indexOf(task_id);
+    temp_task_index.splice(index,1);
+    store.set('task_index', temp_task_index);
+    // back to things list
+    render_things_list();
 
+    if (size<3) {
+        move_away_despage();
+    }
+    console.log(store.get('task_index'));
+}
+
+(function () {
+    $delete_button.on('click', delete_task);
+})();
 
 
 
