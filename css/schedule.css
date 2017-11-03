@@ -154,7 +154,7 @@ body, html, .content, .contain{
     margin-right: 5px;
 }
 
-.task-content{
+.task-name{
     display: inline-block;
     color: rgb(78, 75, 75);
     /*font-size: 1.3em;*/

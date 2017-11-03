@@ -44,8 +44,8 @@ $.fn.drag = function (options) {
     }
     // 获取target
     $target = this;
-    console.log("$target: ", $target);
-    console.log("$container: ", $container);
+    // console.log("$target: ", $target);
+    // console.log("$container: ", $container);
     // 获取click_function
     click_function = opt.click_function;
     // 获取touch_function
