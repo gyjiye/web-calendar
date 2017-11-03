@@ -244,7 +244,7 @@ body, html, .content, .contain{
 
 .des-item-time input
 {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     font-weight: bold;
 }
 
@@ -257,8 +257,9 @@ body, html, .content, .contain{
 
 #to{ color: #C3C3D4; }
 
-.des-item-reminder span,
+/*.des-item-reminder span,*/
 .des-item-reminder span{
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     display: inline-block;
     padding-top: 4px;

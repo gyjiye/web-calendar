@@ -40,6 +40,7 @@ $(function() {
         container:'.mypanel',
         click_function: move_to_despage
     });
+    // $('.demo-test-datetime').scroller('destroy').scroller($.extend(opt['datetime'], opt['default']));
 });
 // =============== END plugin init=============================
 
@@ -150,6 +151,7 @@ function move_away_sharepage() {
 function move_away_despage() {
     $description.hide();
     $things_list.show();
+    $add_task_button.show();
 }
 
 (function () { $des_close.on('click', move_away_despage); })();
@@ -202,20 +204,37 @@ function add_task_button() {
 
 // click task-item to call description on middle size windows
 function move_to_despage() {
+    var $this = $(this);
+
     if(size < 3) {
         // only works on middle and small screen
-        // console.log("click");
         if (size===1) {
             $summary.hide();
         }
+        $add_task_button.hide();
         $things_list.hide();
         $description.show();
         // console.log('test - click task-item to call description');
     }
+    // click task items to render the content in description part
+    console.log('$this.data("task_id"): ', $this.data("task_id"));
+    if ($this.data("task_id")===undefined) {
+        render_description('t001');
+    } else {
+        render_description($this.data("task_id"));
+    }
+
 }
-(function () {
-    $things_list_task_item.on('click', move_to_despage);
-})();
+function test() {
+    console.log('catch click on task item.');
+}
+
+$(function () {
+    (function () {
+        $things_list_task_item.on('click', move_to_despage);
+    })();
+});
+
 
 // call things-list on small size page
 
@@ -272,9 +291,9 @@ var friend_index = ['u001'];
 var task1 = {
     task_id: 't001',
     name: 'just try the app',
-    content: 'hello world, this is the first task',
+    content: 'hello world, here is the content.',
     start_time: now_timestamp,
-    end_time: now_timestamp+24*60*60*1000,
+    end_time: now_timestamp+60*60*1000,
     reminder_time: now_timestamp,
     share_people: [], // user id
     email_remind: true,
@@ -301,8 +320,8 @@ store.set('friend_index', friend_index);
 // render single task in things-list part
 // return the jQuery object of a task shortcut
 function render_one_task(task_id) {
-    var template ='<div class="task-item" data-index="' + task_id + '">'
-        + '<span><input type="checkbox" data-index="' + task_id + '"></span>'
+    var template ='<div class="task-item" data-task_id="' + task_id + '">'
+        + '<span><input type="checkbox" data-task_id="' + task_id + '"></span>'
         + '<span class="task-name">' + store.get(task_id).name + '</span>'
         + '</div>';
 
@@ -313,7 +332,6 @@ function render_one_task(task_id) {
 function render_things_list() {
     $task_item_container.html('');
     var temp_task_index = store.get('task_index');
-    // console.log('temp_task_index: ', temp_task_index);
     for (i=0; i<temp_task_index.length; i++) {
         // var item = store.get(temp_task_index[i]);
         // console.log('temp_task_index[i]: ', temp_task_index[i]);
@@ -321,6 +339,8 @@ function render_things_list() {
         var $item = render_one_task(temp_task_index[i]);
         $task_item_container.prepend($item);
     }
+    // reload the variable after changing the DOM
+    $things_list_task_item = $('.task-item');
 }
 
 // test
@@ -334,11 +354,16 @@ function tran_time(timestamp) {
         d = date.getDate(),
         h = date.getHours(),
         min = date.getMinutes();
+    if (min<10) {
+        min = '0'+min;
+    }
     return y + '-' + m + '-' + d + ' ' + h + ':' + min;
 }
 // render the description
 function render_description(task_id) {
     var item = store.get(task_id);
+    console.log('task_id: ', task_id);
+    console.log('item: ', item);
     $('#id-des-item-name').attr("value", item.name);
     $('#id-des-item-time-start').attr("value", tran_time(item.start_time));
      $('#id-des-item-time-end').attr("value", tran_time(item.end_time));
@@ -346,14 +371,16 @@ function render_description(task_id) {
     $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
     $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
     $('#id-des-item-content').text(item.content);
-
 }
-
-render_description('t001');
 
 
 // $('input[name="my-checkbox"]').bootstrapSwitch('state', true, true);
 // ================ END render content====================
+
+
+// ================ add and delete task====================
+
+// ================ END add and delete task====================
 
 
 

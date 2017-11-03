@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Mobiscroll 2.13.2</title>
+
+    <style type="text/css">
+		*{ margin:0; padding:0;}
+        body {
+            margin: 0; padding: 0;
+            font-family:"微软雅黑";
+            font-size: 14px;
+            background: #fff;}
+		input, select { width: 100%; padding: 5px; margin: 5px 0 10px; border: 1px solid #aaa; box-sizing: border-box; background-color: #FFFFFF; border: 1px solid #ccc; border-radius: 3px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-border-radius: 3px; }
+		label{ font:14px/1.4em "微软雅黑";}
+        .header {
+			box-sizing:border-box;
+            border: 1px solid #333;
+            background: #111; height:40px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 -1px 1px black;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#3C3C3C),to(#111));
+            background-image: -webkit-linear-gradient(#3C3C3C,#111);
+            background-image: -moz-linear-gradient(#3C3C3C,#111);
+            background-image: -ms-linear-gradient(#3C3C3C,#111);
+            background-image: -o-linear-gradient(#3C3C3C,#111);
+            background-image: linear-gradient(#3C3C3C,#111);}
+        .header h1 {
+            text-align: center;
+            font-size: 16px;
+            margin: .6em 0;
+            padding: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+		.header h1 a{ color:#fff; text-decoration:none;}
+        .content { padding: 15px; box-sizing:border-box;}
+		.copy{ height:40px; font:14px/40px "微软雅黑"; color:#aaa; text-align:center; background:#eee; border-top:1px solid #ddd; box-sizing:border-box;}
+        .demo { display: none; }
+
+    </style>
+
+    <script src="script/jquery-1.9.1.js"></script>
+    <script src="script/mobiscroll.2.13.2.js"></script>
+    <link href="style/mobiscroll.2.13.2.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(function () {
+            var curr = new Date().getFullYear();
+            var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+
+          opt.default = {
+				theme: 'android-holo light', //皮肤样式
+		        display: 'modal', //显示方式 
+		        mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy-mm-dd',
+				lang: 'zh',
+				showNow: true,
+				nowText: "今天",
+				stepMinute: 5,
+		        startYear: curr - 0, //开始年份
+		        endYear: curr + 0 //结束年份
+			};
+            $('.settings').bind('change', function() {
+                var demo = 'datetime';
+                if (!demo.match(/select/i)) {
+                    $('.demo-test-' + demo).val('');
+                }
+                $('.demo-test-' + demo).scroller('destroy').scroller($.extend(opt['datetime'], opt['default']));
+                $('.demo').hide();
+                $('.demo-' + demo).show();
+            });
+            $('#demo').trigger('change');
+        });
+    </script>
+
+</head>
+<body>
+
+
+    <div class="content">
+
+        <div class="settings" style="display:none;">
+          <select name="demo" id="demo">
+              <option value="date">日期</option>
+          </select>
+        </div>
+        <input name="test" id="tests" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit" />
+        <input name="test" id="test" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit" />
+       
+    </div> 
+</body>
+</html>
