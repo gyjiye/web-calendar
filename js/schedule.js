@@ -72,10 +72,10 @@ $(function() {
 //     });
     $add_task_button.drag({
         container:'.mypanel',
-        click_function: move_to_despage
+        click_function: add_task_button
     });
     init_date_plugin();
-
+    $share_button.data('task_id', 't001');
 });
 // =============== END plugin init=============================
 
@@ -192,15 +192,7 @@ function move_away_despage() {
 
 (function () { $des_close.on('click', move_away_despage); })();
 
-// button to add task
-// function add_task_button() {
-//     console.log('catch click on button to add task.');
-// }
-// //
-// (function () {
-//     var $add_task_button = $('#add-task-button-draggable');
-//     $add_task_button.on('click', add_task_button);
-// })();
+
 
 // things-list close
 function move_away_things_list() {
@@ -227,8 +219,7 @@ function sidebar_hide() {
 
 // add task button
 function add_task_button() {
-    move_to_sharepage();
-    // clear the content of descript page
+    render_description('t001');
 }
 // call the function in drag.js
 
@@ -271,29 +262,12 @@ function move_to_despage() {
         $description.show();
         // console.log('test - click task-item to call description');
     }
-    // click task items to render the content in description part
-    // console.log('$this.data("task_id"): ', $this.data("task_id"));
-    if ($this.data("task_id")===undefined) {
-        // come from add task button
-        render_description('t001');
-        var now = new Date();
-        var now_timestamp = now.getTime();
-        $share_button.data("task_id", now_timestamp);
-    } else {
-        render_description($this.data("task_id"));
-    }
+
 }
 function test() {
     console.log('catch click on task item.');
 }
 
-
-(function () {
-    $things_list_task_item = $('.task-item');
-    // console.log('$things_list_task_item: ', $things_list_task_item);
-    $things_list_task_item.on('click', move_to_despage);
-    // $things_list_task_item.on('click', test);
-})();
 
 
 
@@ -318,27 +292,7 @@ function test() {
 var now = new Date();
 var now_timestamp = now.getTime();
 
-// storage templates
-// use task_id as index
-var task_template = {
-    task_id: 't000',
-    name: 'task_name',
-    content: ' ',
-    start_time: ' ',
-    end_time: ' ',
-    reminder_time: ' ',
-    share_people: ['u001'], // user id
-    email_remind: true,
-    message_remind: false
-}
 
-// use user_id as index
-var friend_template = {
-    user_id: 'u000',
-    user_name: 'humoufeng'
-}
-
-// other data
 // list to record task_id
 // use 'task_index' as index
 var task_index = ['t001'];
@@ -354,9 +308,9 @@ var task1 = {
     task_id: 't001',
     name: 'just try the app',
     content: 'hello world, here is the content.',
-    start_time: now_timestamp,
-    end_time: now_timestamp+60*60*1000,
-    reminder_time: now_timestamp,
+    start_time: 'start_time here',
+    end_time: 'end_time here',
+    reminder_time: 'reminder_time here',
     share_people: ['u001'], // user id
     email_remind: true,
     message_remind: false
@@ -371,14 +325,12 @@ var friend2 = {
     user_name: 'hu2'
 };
 
-// get the final data
-var task_insert = $.extend({}, task_template, task1);
 
-// store.set(task_insert.task_id, task_insert);
-// store.set('u001', friend1);
-// store.set('u002', friend2);
-// store.set('task_index', task_index);
-// store.set('friend_index', friend_index);
+store.set(task1.task_id, task1);
+store.set('u001', friend1);
+store.set('u002', friend2);
+store.set('task_index', task_index);
+store.set('friend_index', friend_index);
 
 // ================ END test data ======================
 
@@ -387,6 +339,7 @@ var task_insert = $.extend({}, task_template, task1);
 // render single task in things-list part
 // return the jQuery object of a task shortcut
 function render_one_task(task_id) {
+    // console.log('render_one_task -- store.get(task_id): ', store.get(task_id));
     var template ='<div class="task-item" data-task_id="' + task_id + '">'
         + '<span><input type="checkbox" data-task_id="' + task_id + '"></span>'
         + '<span class="task-name">' + store.get(task_id).name + '</span>'
@@ -397,23 +350,30 @@ function render_one_task(task_id) {
 
 // render the things-list
 function render_things_list() {
+    console.log('catch render things-list');
     $task_item_container.html('');
     var temp_task_index = store.get('task_index');
-    for (i=0; i<temp_task_index.length; i++) {
+    for (i = 0; i < temp_task_index.length; i++) {
         // var item = store.get(temp_task_index[i]);
         // console.log('temp_task_index[i]: ', temp_task_index[i]);
         // console.log('store.get(task_id): ', store.get(temp_task_index[i]));
         var $item = render_one_task(temp_task_index[i]);
         $task_item_container.prepend($item);
     }
-    // reload the variable after changing the DOM
-    $things_list_task_item = $('.task-item');
-    $things_list_task_item.on('click', move_to_despage);
-
 }
 
-// test
 render_things_list();
+
+function get_task_info() {
+    $this = $(this);
+    task_id = $this.data('task_id');
+    render_description(task_id);
+}
+
+(function () {
+    $things_list_task_item.on('click', get_task_info);
+})();
+
 
 // transform time from timestamp to 'y-m-d hour:minute'
 function tran_time(timestamp) {
@@ -430,25 +390,28 @@ function tran_time(timestamp) {
 }
 // render the description
 function render_description(task_id) {
-    // console.log('catch render descript')
+    console.log('catch render description');
     var item = store.get(task_id);
-    // console.log('task_id: ', task_id);
-    // console.log('item: ', item);
-    // clear the val created by date input plugin when leave descript
+    console.log('task_id: ', task_id);
+    console.log('item: ', item);
+    console.log('item.start_time: ', item.start_time);
+    // clear the val created by date input plugin when leave description
     $('#id-des-item-time-start').val(undefined);
     $('#id-des-item-time-end').val(undefined);
     $('#id-des-item-reminder').val(undefined);
-    $('#id-des-item-name').attr("value", item.name);
+    $('#id-des-item-name').val(undefined);
     // change the placeholder
-    $('#id-des-item-time-start').attr("placeholder", tran_time(item.start_time));
-    $('#id-des-item-time-end').attr("placeholder", tran_time(item.end_time));
+    $('#id-des-item-name').attr("placeholder", item.name);
+    $('#id-des-item-time-start').attr("placeholder", item.start_time);
+    $('#id-des-item-time-end').attr("placeholder", item.end_time);
     $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
-    $('#id-des-item-reminder').attr("placeholder", tran_time(item.reminder_time));
+    $('#id-des-item-reminder').attr("placeholder", item.reminder_time);
     $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
     $('#id-des-item-content').text(item.content);
     $share_button.data("task_id", task_id);
     render_share();
 }
+
 
 // render one friend
 function render_one_friend(user_id) {
@@ -508,24 +471,30 @@ function tran_time_to_stamp(string) {
 // add or change a task
 // save the date through submit button
 function save_task() {
+    var temp_task_index = store.get('task_index');
+    var now = new Date();
+    var now_stamp = now.getTime();
     var task = {};
-    task.task_id = $share_button.data("task_id");
+
+    if ($share_button.data("task_id")==='t001') {
+        // the new task
+        task.task_id = now_stamp;
+        $share_button.data("task_id", now_stamp);
+        console.log('task.task_id: ', task.task_id);
+    } else {
+        temp_task_index.splice(temp_task_index.indexOf(task.task_id), 1);
+        store.remove($share_button.data("task_id"));
+        task.task_id = $share_button.data("task_id");
+    }
+
     task.name = $('#id-des-item-name').val();
-    task.start_time = tran_time_to_stamp($('#id-des-item-time-start').val());
-    task.end_time = tran_time_to_stamp($('#id-des-item-time-end').val());
-    task.reminder_time = tran_time_to_stamp($('#id-des-item-reminder').val());
+    task.start_time = $('#id-des-item-time-start').val();
+    task.end_time = $('#id-des-item-time-end').val();
+    task.reminder_time = $('#id-des-item-reminder').val();
     task.message_remind = $('#des-item-reminder-message').bootstrapSwitch('state');
     task.email_remind = $('#des-item-reminder-email').bootstrapSwitch('state');
     task.content = $('#id-des-item-content').text();
 
-    var now = new Date();
-    var now_stamp = now.getTime();
-    function pass() {
-
-    }
-    (task.start_time<0) ?  task.start_time=now_stamp : pass;
-    (task.end_time<0) ?  task.end_time=now_stamp+60*60*1000 : pass;
-    (task.reminder_time<0) ?  task.reminder_time=now_stamp : pass;
 
     // get the share target
     var share_people = [];
@@ -539,32 +508,14 @@ function save_task() {
     console.log('share_people: ', share_people);
     console.log('task: ', task);
 
-    var temp_task_index = store.get('task_index');
-    // 去重
-    function getArray(a) {
-        var hash = {},
-            len = a.length,
-            result = [];
-
-        for (var i = 0; i < len; i++){
-            if (!hash[a[i]]){
-                hash[a[i]] = true;
-                result.push(a[i]);
-            }
-        }
-        return result;
-    }
 
     temp_task_index.push(task.task_id);
-    temp_task_index = getArray(temp_task_index);
     store.set('task_index', temp_task_index);
-    store.remove($share_button.data("task_id"));
     store.set(task.task_id, task);
-
 
     // back to things list
     render_things_list();
-    move_away_despage();
+
 }
 
 (function () {
