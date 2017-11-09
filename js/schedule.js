@@ -282,7 +282,6 @@ function move_to_despage() {
     } else {
         render_description($this.data("task_id"));
     }
-
 }
 function test() {
     console.log('catch click on task item.');
@@ -443,8 +442,8 @@ function render_description(task_id) {
     // change the placeholder
     $('#id-des-item-time-start').attr("placeholder", tran_time(item.start_time));
     $('#id-des-item-time-end').attr("placeholder", tran_time(item.end_time));
-    $('#id-des-item-reminder').attr("placeholder", tran_time(item.reminder_time));
     $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
+    $('#id-des-item-reminder').attr("placeholder", tran_time(item.reminder_time));
     $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
     $('#id-des-item-content').text(item.content);
     $share_button.data("task_id", task_id);
@@ -572,10 +571,6 @@ function save_task() {
     $submit_button.on('click', save_task);
 })();
 
-// delete task when click delete button ib part description
-function delete_task() {
-
-}
 
 
 // ================ END add and delete task====================
