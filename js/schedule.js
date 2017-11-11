@@ -66,15 +66,15 @@ $(function() {
     //    init the bootstrapSwitch checkbox;
     $('input[name=my-checkbox]').bootstrapSwitch({});
     // add task button draggable
-    // $('#add-task-button-draggable').draggabilly({containment: '.mypanel'});
-//     $('#add-task-button-draggable').udraggable({
-//         containment: '.mypanel'
-//     });
     $add_task_button.drag({
         container:'.mypanel',
         click_function: add_task_button
     });
+    // init the date input plugin
     init_date_plugin();
+    // add task_id 't001' to share button to avoid
+    // that the code crashes when user create the task without click add_task_button
+    // once the page has been loaded
     $share_button.data('task_id', 't001');
 });
 // =============== END plugin init=============================
@@ -89,6 +89,7 @@ function page_init_large() {
     $description.show();
     $description.css('width', '40%');
     $des_close.hide();
+    $things_list_close.hide();
     // console.log('test - page_init_large');
 }
 
@@ -354,17 +355,22 @@ function render_things_list() {
     $task_item_container.html('');
     var temp_task_index = store.get('task_index');
     for (i = 0; i < temp_task_index.length; i++) {
-        // var item = store.get(temp_task_index[i]);
-        // console.log('temp_task_index[i]: ', temp_task_index[i]);
-        // console.log('store.get(task_id): ', store.get(temp_task_index[i]));
+        // don't render task1 which is used as a template for description
+        if (temp_task_index[i]==='t001') {
+            continue;
+        }
         var $item = render_one_task(temp_task_index[i]);
         $task_item_container.prepend($item);
     }
+    // bind the function again once the DOM has been changed
+    $things_list_task_item = $('.task-item'); // things-list task-list
+    $things_list_task_item.on('click', get_task_info);
 }
 
 render_things_list();
 
 function get_task_info() {
+    console.log('catch on things_list_task_item');
     $this = $(this);
     task_id = $this.data('task_id');
     render_description(task_id);
@@ -399,9 +405,17 @@ function render_description(task_id) {
     $('#id-des-item-time-start').val(undefined);
     $('#id-des-item-time-end').val(undefined);
     $('#id-des-item-reminder').val(undefined);
-    $('#id-des-item-name').val(undefined);
+    // render the task name input
+    // if rendering template task, use the placeholder
+    // if rendering user's task, use the val of input
+    if (task_id === 't001') {
+        // clear the value that last task left
+        $('#id-des-item-name').val(undefined);
+        $('#id-des-item-name').attr("placeholder", item.name);
+    } else {
+        $('#id-des-item-name').val(item.name);
+    }
     // change the placeholder
-    $('#id-des-item-name').attr("placeholder", item.name);
     $('#id-des-item-time-start').attr("placeholder", item.start_time);
     $('#id-des-item-time-end').attr("placeholder", item.end_time);
     $('#des-item-reminder-message').bootstrapSwitch('state', item.message_remind);
@@ -533,8 +547,10 @@ function delete_task() {
     var index = temp_task_index.indexOf(task_id);
     temp_task_index.splice(index,1);
     store.set('task_index', temp_task_index);
-    // back to things list
+    // reload things list
     render_things_list();
+    // reload description
+    render_description('t001');
 
     if (size<3) {
         move_away_despage();
