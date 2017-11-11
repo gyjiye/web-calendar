@@ -76,6 +76,7 @@ $(function() {
     // that the code crashes when user create the task without click add_task_button
     // once the page has been loaded
     $share_button.data('task_id', 't001');
+    render_share();
 });
 // =============== END plugin init=============================
 
@@ -405,6 +406,7 @@ function render_description(task_id) {
     $('#id-des-item-time-start').val(undefined);
     $('#id-des-item-time-end').val(undefined);
     $('#id-des-item-reminder').val(undefined);
+
     // render the task name input
     // if rendering template task, use the placeholder
     // if rendering user's task, use the val of input
@@ -423,14 +425,15 @@ function render_description(task_id) {
     $('#des-item-reminder-email').bootstrapSwitch('state', item.email_remind);
     $('#id-des-item-content').text(item.content);
     $share_button.data("task_id", task_id);
+    console.log('prepare for render share');
     render_share();
 }
 
 
 // render one friend
 function render_one_friend(user_id) {
-    var this_share_list = store.get('friend_index');
-    // var this_share_list = store.get($share_button.data("task_id")).share_people;
+    // var this_share_list = store.get('friend_index');
+    var this_share_list = store.get($share_button.data("task_id")).share_people;
     var check_judge = "";
     for (i=0;i<this_share_list.length;i++) {
         if (user_id == this_share_list[i]){
@@ -448,8 +451,10 @@ function render_one_friend(user_id) {
     // console.log(template);
     return $(template);
 }
+
 // render the share part with all friends
 function render_share() {
+    console.log('catch click on share button');
     $share_list.html('');
     var temp_friend_index = store.get('friend_index');
     for (i=0; i<temp_friend_index.length; i++) {
@@ -459,6 +464,7 @@ function render_share() {
     // reload the variable after changing the DOM
     $share_items = $('.share-item');
 }
+
 
 
 
@@ -541,16 +547,20 @@ function save_task() {
 // ================ END add and delete task====================
 // delete task when click delete button ib part description
 function delete_task() {
-    var task_id = $share_button.data("task_id");
-    store.remove(task_id);
-    var temp_task_index = store.get('task_index');
-    var index = temp_task_index.indexOf(task_id);
-    temp_task_index.splice(index,1);
-    store.set('task_index', temp_task_index);
-    // reload things list
-    render_things_list();
+    var task_id = $share_button.data("task_id")
+    if (task_id!=='t001') {
+        store.remove(task_id);
+        var temp_task_index = store.get('task_index');
+        var index = temp_task_index.indexOf(task_id);
+        temp_task_index.splice(index,1);
+        store.set('task_index', temp_task_index);
+        // reload things list
+        render_things_list();
+    }
+
     // reload description
     render_description('t001');
+
 
     if (size<3) {
         move_away_despage();
