@@ -432,11 +432,16 @@ function render_description(task_id) {
 
 // render one friend
 function render_one_friend(user_id) {
+    console.log('in function render_one_friend');
     // var this_share_list = store.get('friend_index');
     var this_share_list = store.get($share_button.data("task_id")).share_people;
     var check_judge = "";
     for (i=0;i<this_share_list.length;i++) {
-        if (user_id == this_share_list[i]){
+        console.log("i in user's share_list: ", i);
+        console.log("this_share_list.length: ", this_share_list.length);
+        console.log("this_share_list[i]: ", this_share_list[i]);
+        console.log("user_id: ", user_id);
+        if (user_id === this_share_list[i]){
             check_judge = "checked";
             break;
         }
@@ -444,20 +449,23 @@ function render_one_friend(user_id) {
 
     var template = '<li class="checkbox list-group-item share-item">'
         + '<label>'
-        + '<input type="checkbox"  name="share-item-checkbox" data-user_id="' + user_id + '"' + check_judge + '>'
+        + '<input type="checkbox"  name="share-item-checkbox" data-user_id="' + user_id + '" ' + check_judge + '>'
         + store.get(user_id).user_name
         + '</label>'
         + '</li>';
-    // console.log(template);
+    console.log(template);
     return $(template);
 }
 
 // render the share part with all friends
 function render_share() {
-    console.log('catch click on share button');
+    console.log('in function render_share');
     $share_list.html('');
     var temp_friend_index = store.get('friend_index');
+    console.log('temp_friend_index.length: ', temp_friend_index.length);
     for (i=0; i<temp_friend_index.length; i++) {
+        console.log('temp_friend_index[i]', temp_friend_index[i]);
+        console.log('i: ',i);
         var $item = render_one_friend(temp_friend_index[i]);
         $share_list.prepend($item);
     }
