@@ -435,8 +435,8 @@ function render_one_friend(user_id) {
     // var this_share_list = store.get('friend_index');
     var this_share_list = store.get($share_button.data("task_id")).share_people;
     var check_judge = "";
-    for (i=0;i<this_share_list.length;i++) {
-        if (user_id == this_share_list[i]){
+    for (var j=0;j<this_share_list.length;j++) {
+        if (user_id == this_share_list[j]){
             check_judge = "checked";
             break;
         }
@@ -457,7 +457,7 @@ function render_share() {
     console.log('catch click on share button');
     $share_list.html('');
     var temp_friend_index = store.get('friend_index');
-    for (i=0; i<temp_friend_index.length; i++) {
+    for (var i=0; i<temp_friend_index.length; i++) {
         var $item = render_one_friend(temp_friend_index[i]);
         $share_list.prepend($item);
     }
