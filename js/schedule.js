@@ -395,6 +395,7 @@ function tran_time(timestamp) {
     }
     return y + '-' + m + '-' + d + ' ' + h + ':' + min;
 }
+
 // render the description
 function render_description(task_id) {
     console.log('catch render description');
@@ -429,7 +430,11 @@ function render_description(task_id) {
     render_share();
 }
 
-
+/**
+ *
+ * @param user_id
+ * @returns {jQuery|HTMLElement}
+ */
 // render one friend
 function render_one_friend(user_id) {
     console.log('in function render_one_friend');
@@ -449,7 +454,7 @@ function render_one_friend(user_id) {
         + store.get(user_id).user_name
         + '</label>'
         + '</li>';
-    console.log(template);
+    // console.log(template);
     return $(template);
 }
 
@@ -546,7 +551,7 @@ function save_task() {
 
 
 // ================ END add and delete task====================
-// delete task when click delete button ib part description
+// delete task when click delete button in part description
 function delete_task() {
     var task_id = $share_button.data("task_id")
     if (task_id!=='t001') {
